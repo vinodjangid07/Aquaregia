@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="theme-color" content="black">
+        <title>Profile</title>
+        <link rel="icon" type="image/x-icon" href="">
+        <!-- aos cdn -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="profile.css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+    
+</head>
+<body>
+    <header>
+       <!-- navbar section stars from here -->
+        <nav id=navBar>
+            <div class="logo">LOGO</div>
+            <div class="tabs">
+                <ul class="tabs_button">
+                    <a href="index.html"><li id="home">Home</li></a>
+                    <a href="events.html"><li id="events">Events</li></a>
+                    <a href="sponsors.html"><li id="sponsors">Sponsors</li></a>
+                    <a href="team.html"><li id="team">Team</li></a>
+                    <a href="FAQs.html"><li id="faqs">FAQs</li></a>
+                    <a href="profile.html"><button class="profile-btn" id="profile-btn">P</button></a>
+
+                </ul>
+
+                <div class="hamburger" id="hamburger">
+                    <button id="hamburger-button" onclick="hamburgerMenu()">
+                        <span class="burger-bar" id="burger-bar1"></span>
+                        <span class="burger-bar" id="burger-bar2"></span>
+                        <span class="burger-bar" id="burger-bar3"></span></button>
+                </div>
+
+
+
+            </div>
+        </nav><!-- navbar section ends here -->
+        <!-- mobile  toggle menu -->
+        <div>
+            
+            <ul class="tabs_button2" id="tabs_button2">
+                <div class="profilebtndiv tabsbuttonclass">
+                    <a href="profile.html"><button id="mobile-profile-btn" class="profilebtnformobilenav"></button></a>
+                </div>
+               <div class="hamburger-a-div">
+                <a href="index.html"><li class="tabsbuttonclass" id="homeformobilenav">Home</li></a>
+                <a href="events.html"><li class="tabsbuttonclass" id="eventsformobilenav">Events</li></a>
+                <a href=""><li class="tabsbuttonclass" id="sponsorsformobilenav">Sponsors</li></a>
+                <a href=""><li class="tabsbuttonclass" id="teamformobilenav">Team</li></a>
+                <a href="FAQs.html"><li class="tabsbuttonclass" id="faqsformobilenav">FAQs</li></a>
+            </div>
+            <div class="mobile-logout-btn-section">
+                <button class="mobile-logout-btn"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</button>
+            </div>
+
+            </ul>
+        </div>
+        <!-- mobile  toggle menu ends here-->
+    </header> <!-- header ends here -->
+
+
+    <main>
+        <div class="big-daddy-profile-container">
+            <!-- profile visual data like :- name and dp -->
+            <div class="profile-visual-container">
+                <div class="profile-image-div">
+                    <img src="user-dp.svg" alt="user-image">
+                    <div class="name-and-id">
+                    <article id="username">Manushya Purush Prajati </article>
+                    <article id="user-given-id">ID:######</article>
+                </div>
+                </div>
+
+                <ul class="profile-toggle-menu">
+                    <li><a href="" class="selected-tab"><i class="fas fa-user"></i>&nbsp;Profile</a></li>
+                    <li><a href="" class="unselected-tab"><i class="fas fa-calendar-week"></i>&nbsp;Events</a></li>
+                    <li><a href="" class="unselected-tab"><i class="fab fa-cc-visa"></i>&nbsp;Payment</a></li>
+                </ul>
+            </div><!-- profile visual data like :- name and dp -->
+
+            <div class="profile-text-info-container">
+                <div class="personal-plus-college-details-merge-div">
+              
+                <div class="college-details-section">
+                    <div class="details-heading-div">
+                    <article id="college-details-heading">College Details</article>
+                </div>
+                    <div class="college-details-info-div">
+                        <div class="small-details-div">
+                            <article id="college-name-heading">College</article>
+                            <p id="college-name">University Maharaja College</p>
+                        </div>
+                        <div class="small-details-div">
+                            <article id="college-name-heading">City</article>
+                            <p id="college-name">City Name</p>
+                        </div>
+                        <div class="small-details-div">
+                            <article id="college-name-heading">State</article>
+                            <p id="college-name">State Name</p>
+                        </div>
+                        <div class="small-details-div">
+                            <article id="college-name-heading">Branch</article>
+                            <p id="college-name">Branch Name</p>
+                        </div>
+                        <div class="small-details-div">
+                            <article id="college-name-heading">Year</article>
+                            <p id="college-name">Year Name</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="personal-details-section">
+                    <div class="details-heading-div">
+                    <article id="personal-details-heading">Personal Details</article>
+                </div>
+                    <div class="personal-details-info-div">
+                        <div class="small-details-div">
+                            <article id="email-heading">Email</article>
+                            <p id="email-address">emailaddressofstudent@gmail.com</p>
+                        </div>
+                        <div class="small-details-div">
+                            <article id="contact-heading">Contact</article>
+                            <p id="contact">+819876541230</p>
+                        </div>
+                        <div class="small-details-div">
+                            <article id="gender-heading">Gender</article>
+                            <p id="gender">Male</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="collegeId-logout-btn-merge-section">
+                <div class="college-id-section">
+                    <div class="details-heading-div">
+                    <article class="college-id-heading">College ID</article>
+                </div>
+                    <img src="id.png" alt="CollegeId">
+                    <button class="delete-btn"><i class="fas fa-trash-alt"></i>&nbsp;Delete</button>
+                </div>
+                <div class="logout-btn-section">
+                    <button class="logout-btn"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+<script>
+    // for hamburger
+let tabsformobileclass = document.querySelectorAll('.tabsbuttonclass')
+function hamburgerMenu() {
+    document.getElementById("tabs_button2").classList.toggle("show");
+    document.getElementById("navBar").classList.toggle("navbarToggleClass");
+    // document.getElementById("rotatebtn").classList.toggle("rotate")
+    document.body.classList.toggle("stopscrolling")
+    document.getElementById("burger-bar1").classList.toggle("hamburger-animation1");
+    document.getElementById("burger-bar2").classList.toggle("hamburger-animation2");
+    document.getElementById("burger-bar3").classList.toggle("hamburger-animation3");
+
+      tabsformobileclass.forEach((item) =>
+      item.classList.toggle('showmobiletabs'));
+    
+  }
+  
+
+//   for profile first alphabet
+
+var username = document.getElementById("username").textContent;
+var mobileprofileBtn = document.getElementById("mobile-profile-btn");
+var profileBtn = document.getElementById("profile-btn");
+var firstletter = (username.charAt(0));
+
+mobileprofileBtn.textContent = firstletter;
+profileBtn.textContent = firstletter;
+
+
+</script>
+</html>

@@ -1,0 +1,320 @@
+@font-face {
+    font-family: varelaRound;
+    src: url(VarelaRound-Regular.ttf);
+}
+
+@font-face {
+    font-family: workSans1;
+    src: url(WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: workSans2;
+    src: url(WorkSans-Italic-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+#bigFlex1 {
+    padding: 5vh 0 0 5vw;
+    height: 100vh;
+    width: 50vw;
+}
+
+.logo {
+    font-size: 5.5vh;
+}
+
+#logo1 {
+    display: none;
+}
+
+#heading {
+    font-size: 8vh;
+    margin-top: 15vh;
+}
+
+#content {
+    margin-top: 3vh;
+    width: 40vw;
+    font-size: 2.5vh;
+    letter-spacing: 4px;
+    text-align: justify;
+}
+
+#loginRegister {
+    width: 12vw;
+    height: 6vh;
+    font-size: 2.5vh;
+    letter-spacing: 2px;
+    margin-top: 10vh;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+    color: black;
+    border: 2px solid white;
+}
+
+#loginRegister::before {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    content: "";
+    transform: scaleX(1);
+    transition-duration: .4s;
+    transform-origin: right;
+    z-index: -1;
+}
+
+#loginRegister:hover {
+    color: white;
+    transition-duration: .4s;
+    border: 2px solid white;
+}
+
+#loginRegister:hover::before {
+    transform: scaleX(0);
+    transition-duration: .4s;
+}
+
+#alignment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 18vh;
+    margin-left: -2vw;
+}
+
+#rulesHeader {
+    display: flex;
+    font-size: 3.5vh;
+}
+
+#rulesHeaderTitle {
+    font-size: 4vh;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+
+#arrow {
+    display: flex;
+    cursor: pointer;
+    font-weight: 900;
+    fill: white;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+svg {
+    transform: scale(1.7);
+}
+
+#rulesHeaderTitle:hover {
+    color: rgb(84, 135, 179);
+}
+
+#rulesHeaderTitle:hover+#arrow {
+    color: rgb(84, 135, 179);
+    fill: rgb(84, 135, 179);
+}
+
+#arrow:hover {
+    fill: rgb(84, 135, 179);
+}
+
+
+.download {
+    height: 4vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    translate: 0px -5px;
+    cursor: pointer;
+    background-color: white;
+    outline: none;
+    border: none;
+}
+
+.download:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+#bigFlex2 {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#img {
+    border: 2px solid white;
+    height: 600px;
+    width: 600px;
+    margin-right: 7vw;
+    overflow: hidden;
+}
+
+#img img {
+    height: 100%;
+}
+
+#rulesContent {
+    font-family: workSans1;
+    overflow: hidden;
+    height: 0px;
+
+}
+
+h2 {
+    margin-top: 2.5vh;
+}
+
+#rulesContent p {
+    font-size: 2.5vh;
+    letter-spacing: 2px;
+    text-align: justify;
+    margin-top: 1.5vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-weight: 100;
+    line-height-step: 2px;
+}
+
+li {
+    margin-left: 20px;
+}
+
+#coordinatorsss {
+    display: flex;
+    justify-content: space-around;
+}
+
+.coordinator {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.coordinator div {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* responsive code below*/
+@media screen and (max-width:1020px) {
+    main {
+        flex-direction: column;
+
+        align-items: flex-start;
+        height: 170vh;
+
+
+    }
+
+    #logo1 {
+        display: block;
+        box-sizing: border-box;
+        margin: 20px;
+
+    }
+
+    #logo2 {
+        display: none;
+    }
+
+    #loginRegister {
+        width: 40vw;
+
+    }
+
+    /* #logo{
+
+    } */
+
+    #bigFlex2 {
+        box-sizing: border-box;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 25px;
+        height: auto;
+
+    }
+
+    #img {
+        margin: 0;
+
+    }
+
+    #bigFlex1 {
+        box-sizing: border-box;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 15px;
+
+
+    }
+
+    #content {
+        width: 90vw;
+        /* margin: 10px 0px; */
+        margin-right: 0px;
+    }
+}
+
+#rulesHeader {
+    margin-left: 2vh;
+    margin-bottom: 2vh;
+}
+
+.download {
+    border-radius: 3px;
+    height: 30px;
+    width: 110px;
+}
+
+
+@media screen and (max-width:650px) {
+    #img {
+        height: 60vh;
+        width: 60vh;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #img {
+        height: 50vh;
+        width: 50vh;
+    }
+}
+
+@media screen and (max-width:370px) {
+    #img {
+        height: 40vh;
+        width: 40vh;
+    }
+}

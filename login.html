@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="theme-color" content="black">
+        <title>Aquaregia-Login</title>
+        <link rel="icon" type="image/x-icon" href="faviconjpground.png">
+        <!-- aos cdn -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="login.css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+    </head>
+<body>
+    <main>
+        <div class="bigdaddy-flexbox">
+        <!-- login div on left side  -->
+        <div class="login-main-container">
+               <!-- form -->
+               <form class="login" action="/login" method="post">
+             <div class="back-to-home-div"><a href="index.html" id="arrow-left"></a></div> 
+            <div class="login-heading-div"><h1 id="big-login-heading">LOGIN</h1></div>
+                <!-- email password div -->
+                <div class="email-password-div">
+                    <div class="email-div"><label for="email" id="email-label">Email ID</label>
+                    <input type="text" id="email"  required>
+                </div>
+                <div class="password-div">
+                <label for="password" id="password-label">Password</label>
+                <div id="eyetoggle">
+                    <i class="fas fa-eye" id="show"></i>
+                    <i class="fas fa-eye-slash" id="hide"></i>
+                </div>
+                <input type="password" id="password"  required>
+            </div>
+            </div>
+            <div class="login-btn-div"><button id="login-btn">Login</button></div>
+            </form>
+            <div class="registeration-link-div">
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </div>
+        </div>
+        <!-- login div on left ends here -->
+
+
+
+        <!-- side wallpaper div -->
+        <div class="side-wallpaper-main-container"></div>
+        </div>
+    </main>
+    <script>
+        let emailField = document.getElementById("email");
+        let passwordField = document.getElementById("password");
+    
+        emailField.addEventListener('focus',focusemailFunction)
+        function focusemailFunction(e) {
+            document.getElementById("email-label").classList.add("active");
+            document.getElementById('big-login-heading').classList.add("login-heading-opacity-function");
+        }
+    
+        emailField.addEventListener('blur',bluremailFunction)
+        function bluremailFunction(e) {
+            if (emailField.value === "") {
+                document.getElementById("email-label").classList.remove("active");
+                document.getElementById('big-login-heading').classList.remove("login-heading-opacity-function");
+            }
+            else{
+                document.getElementById('big-login-heading').classList.remove("login-heading-opacity-function");
+            }
+        }
+    
+        passwordField.addEventListener('focus', focusFunctionpassword)
+        function focusFunctionpassword(f) {
+            document.getElementById("password-label").classList.add("active");
+            document.getElementById('big-login-heading').classList.add("login-heading-opacity-function");
+        }
+    
+        passwordField.addEventListener('blur', blurFunctionpassword)
+        function blurFunctionpassword(f) {
+            if (passwordField.value === "") {
+                document.getElementById("password-label").classList.remove("active");
+                document.getElementById('big-login-heading').classList.remove("login-heading-opacity-function");
+            }
+            else{
+                document.getElementById('big-login-heading').classList.remove("login-heading-opacity-function");
+            }
+    
+        }
+    
+    let eyeBtn = document.getElementById("eyetoggle");
+    let hide = document.getElementById("hide");
+    let show = document.getElementById("show");
+    
+     eyeBtn.addEventListener('click',passwordSee);
+     function passwordSee(g){
+        if (passwordField.type === "password"){
+        passwordField.type = "text";
+        show.style.display = "block";
+        hide.style.display = "none";
+
+    }
+    else{
+        passwordField.type = "password";
+        show.style.display = "none";
+        hide.style.display = "block";
+
+    }
+    }
+    </script>
+</body>
+</html>
