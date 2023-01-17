@@ -18,6 +18,7 @@
         
 
             <div class="bigFlex1">
+                <div class="back-to-home-div"><div id="arrow-left" onclick="history.back()"></div></div> 
                 <div id="logo"><article>LOGO</article></div>
                 
                 <form class="register" action="/register" method="post">
@@ -40,6 +41,15 @@
                         </div>
                         <div class="bchaFlex">
 
+
+                            <select class="inputCont" name="sex" id="sex">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="bchaFlex">
+
                             <label for="college">College/University </label>
                             <input class="inputCont" type="text" name="college" id="college"  required="required"/>
                         </div>
@@ -56,7 +66,7 @@
                         <div class="bchaFlex">
 
                             <label for="phone">Mobile No. </label>
-                            <input class="inputCont" type="text" name="phone" id="phone"  required="required"/>
+                            <input class="inputCont" type="number" name="phone" id="phone"   required="required"/>
                         </div>
                         <div class="bchaFlex">
 

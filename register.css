@@ -28,8 +28,33 @@ html {
 body{
     background-color:black;
     color: white;
+
+    
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb{
+   background-color: rgb(60, 200, 255);
+   /* border-radius: 20px; */
+
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+option{background-color: rgb(0, 0, 0);}
+select.inputCont option:hover {fill: rgb(0, 0, 0);}
 main{
     display: flex;
 }
@@ -39,16 +64,44 @@ main{
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-image: url(Stars-background-dark.jpeg);
-    background-size: 100%;
+    background-color: white;
+    background-image: url(Stars-background-dark.svg);
+    background-size:100%;
+    /* overflow: visible; */
+    /* overflow-y: scroll; */
 }
+.back-to-home-div{
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 10vh;
+}
+#arrow-left{
+    background-color: black;
+    background-image: url(arrow-left.png);
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .bigFlex2{
-    height: 175vh;
+    height: 100vh;
     width: 50%;
     background-color: white;
     background-image: url(flying-in-a-dream-portrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
+    right:0;
+    
 }
 .register{
     width: 100%;

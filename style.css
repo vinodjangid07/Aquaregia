@@ -1,3 +1,15 @@
+@font-face {
+    font-family: cmFont;
+    src: url(CmFont-BWVm5.ttf);
+}
+@font-face {
+    font-family: space;
+    src: url(SpaceMavericks-qZo91.ttf);
+}
+@font-face {
+    font-family: spaceFrig;
+    src: url(SpaceFrigate-KVdW.ttf);
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -39,8 +51,7 @@ body {
     background-image: url(Stars-background-dark.svg);
     background-size: 60%;
 }
-
-#preloader{
+ #preloader {
     background-color: black;
     height: 100%;
     width: 100%;
@@ -56,8 +67,16 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center ;
+    /* mix-blend-mode: difference; */
     width: 100px;
     height: 100px;
+    /* background-color: red; */
+
+    
+    /* filter:drop-shadow(0px 0px 2px rgb(214, 202, 250))
+    drop-shadow(0px 0px 5px rgb(151, 116, 255))
+    drop-shadow(0px 0px 10px rgb(116, 71, 251))
+    drop-shadow(0px 0px 15px rgba(64, 0, 255, 0.81)); */
 }
 
 /* after clicking hamburger icon scrolling will disable */
@@ -248,7 +267,7 @@ body {
 
 
 #infoCircle1{
-    background-image: url(redPlanet\ \(2\).svg);
+    background-image: url(redPlanet.svg);
     background-position: center;
     background-size: 103%;
     background-repeat: no-repeat;
@@ -295,22 +314,23 @@ body {
     transform:translate(-10px,10px);
     transition-duration: .5s;
 
-}
-#infoCircle1 span,
-#infoCircle2 span,
-#infoCircle3  span{
-    font-size: 4rem;
-    font-weight: 700;
-    color: white;
-}
-#infoCircle1 p,
-#infoCircle2 p,
-#infoCircle3 p{
-    font-size: 3rem;
-    letter-spacing: 3px;
-    font-weight: 500;
-    color: white;
-}
+    }
+    #infoCircle1 span,
+    #infoCircle2 span,
+    #infoCircle3  span{
+        font-size: 4rem;
+        font-weight: 700;
+        color: white;
+        font-family: spaceFrig;
+    }
+    #infoCircle1 p,
+    #infoCircle2 p,
+    #infoCircle3 p{
+        font-size: 3rem;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: white;
+    }
 
 #about {
     width: 80%;
@@ -325,6 +345,8 @@ body {
    
     height: 900px;
     width: 900px;
+ 
+
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -333,7 +355,23 @@ body {
     transition-duration: .5s;
     position: relative;
     text-align: center;
-   
+   margin-left: 20px;
+}
+#aboutCircle p{
+
+    /* background-color: red   ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* letter-spacing: 3px; */
+    margin-bottom: 100px;
+    width: 55%;
+    font-size: 1.6rem;
+    
+    color: #edb1e6;
+    font-weight: 300;
+    letter-spacing: 3px;
 }
 
 #aboutCircle:hover{
@@ -345,7 +383,7 @@ body {
 #aboutCircle::before{
     content:"";
     height:100%;
-    width:100%;
+    width: 900px;
     border-radius: 50%;
     transition-duration: .5s;
     position: absolute;
@@ -369,30 +407,19 @@ body {
     transform: scale(1.1);
     transition-duration: .5s;
     rotate: -2deg;
-        animation: blackHoleSpin 400s linear infinite;
+        animation: blackHoleSpin 300s linear infinite;
     animation-fill-mode: forwards;
 }
 #aboutCircle span{ 
-    font-size: 4rem;
+    font-size: 5rem ;
     font-weight: 800;
     color: white;
     margin-bottom: 50px;
     letter-spacing: 10px;
-    background-image: url(crack.png);
-    background-size: 170%;
-    background-clip: text;
-    /* background-blend-mode: darken; */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-family: spaceFrig;
+    filter: drop-shadow(0px 0px 2px #ccae8a);
 }
-#aboutCircle p{
-    font-size: 1.6rem;
-    padding-left: 100px;
-    padding-right: 40px;
-    color: white;
-    font-weight: 100;
-    letter-spacing: 3px;
- }
+
 
 .majorAttractionsMaincontainer{
     width: 100%;
@@ -511,13 +538,13 @@ margin-top: 34px;
     font-size: 6rem;
     width: 100%;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    letter-spacing: 10px;
   
 }
 #two-Lines-Sub-Div-Description{
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: white;
 }
 #two-Lines-Sub-Div-ul{
@@ -545,6 +572,74 @@ margin-top: 34px;
     border-right: 2px solid white;
       padding: 0px 40px;
 }
+
+.category-heading{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    font-weight: 500;
+    /* background-color: blue; */
+        margin:100px 0px 50px 0px;
+    letter-spacing: 2px;
+    font-family: fastHand;
+    /* font-family: Soloist3D; */
+    /* font-family: SoloistTitle; */
+}
+.category-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.profile-card{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 200px;
+    height: 250px;
+    background: linear-gradient(rgba(236, 236, 236, 0.112),rgba(203, 203, 203, 0.015));
+    padding:30px 0px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    gap: 20px;  
+}
+.dp{
+    height: 70%;
+    width: 80%;
+    background-color: transparent;
+    transform: translateZ(0px);
+    border-radius: 5px;
+    overflow: hidden;   
+}
+.dp img{
+    width: 100%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateZ(0px);
+}
+.profile-card:hover .info{
+    transform: translateZ(50px);
+}
+.name{
+    color: white;
+    font-size: 1.5rem;
+}
+.mobile,.email{
+    color: white;
+    font-size: 1rem;
+}
+
 footer{
     /* background-image: url(kasra-assadian-QTiQ4ujnKeg-unsplash.jpg); */
     background-repeat: no-repeat;
@@ -554,20 +649,22 @@ footer{
 .footer-container{
     margin-top: 200px;
     width: 100%;
-    height: 75vh;
     display: flex;
     flex-direction: column;
     padding: 0px 70px;
-    /* backdrop-filter: blur(5px); */
+    gap: 50px;
+    background-color: rgba(28, 28, 28, 0.283);
 }
+
 .footer-top{
     width: 100%;
-    height: 95%;
+    height: 250px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding-top: 50px;
+    position: relative;
+    /* background-color: red; */
 
 }
 .aquaregia-details-container{
@@ -575,17 +672,16 @@ footer{
     flex-direction: column;
     width: 30%;
     height: 100%;
-    gap: 40px;
+    gap: 0px;
+    /* background-color: #3b5998; */
 }
 .aquaregia-title-div{
     width: 100%;
-    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding-bottom: 20px;
-    
 }
 .aquaregia-title-div article{
     width: 100%;
@@ -595,18 +691,27 @@ footer{
     color: rgb(255, 255, 255);
 }
 .aquaregia-title-div p{
-    width:80%;
+    width:30%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
     font-weight: 700;
     color: #ddd;
+
+}
+.footer-content-heading{
+    width: 100%;
+    font-size:3rem;
+    color: rgb(225, 225, 225);
+    font-weight: 700;
+    text-decoration: underline;
 }
 .location-div{
     width: 100%;
     display: flex;
     height: fit-content;
+    margin: 20px 0px;
 }
 .location-div a{
     text-decoration:none ;
@@ -631,6 +736,7 @@ footer{
     width: 100%;
     display: flex;
     align-items: center;
+    margin: 20px 0px;
 }
 .call-div a{
     text-decoration: none;
@@ -644,6 +750,7 @@ footer{
 .gmail-div{
     width: 100%;
     align-items: center;
+    margin: 20px 0px;
 
 }
 .gmail-div a{
@@ -656,20 +763,30 @@ footer{
     color: white;
 }
 .footer-tabs-container{
-    width: 40%;
+    width: 25%;
     height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items:flex-start;
     justify-content: center;
-    padding-left:80px ;
+    /* padding-left:80px ; */
+    /* background-color: blueviolet; */
+}
+.menu{
+    text-align: center;
+}
+.socials{
+    display: none;
 }
 .footer-tabs-container ul{
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 0px;
+    /* background-color: yellow; */
 }
 .footer-tabs-container ul li{
     list-style: none;
@@ -677,8 +794,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 15px 0px;
- 
+    margin: 20px 0px;
+    /* background-color: #fd5949; */
+    text-align: center;
 }
 .footer-tabs-container ul li a{
     width: 50%;
@@ -688,6 +806,7 @@ footer{
     font-size: 2rem;
     font-weight: 500;
     position: relative;
+
 }
 .footer-tabs-container ul li a:before{
     content: "";
@@ -711,106 +830,89 @@ footer{
 
 
 
-.social-media-container{
+.coordinators-main-container{
+    position: relative;
     width: 30%;
     height: 100%;
     display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-}
-.coordinators-container{
-    width: 100%;
-    height: 50%;
-    width:100%;
-    display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content: flex-end;
+    align-items:flex-end;
+    justify-content: flex-start;
+    /* background-color: rgb(90, 8, 8); */
+}
+.contact-us{
+    text-align: end;
 }
 
-.coordinators-heading-text{
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 600;
-    width: 50%;
-
-}
 .coordinators-name{
+    display: block;
     color: #ddd;
     font-size: 2rem;
-    width: 50%;
-    padding-top: 20px;
-
-}
-.number{
-    color: #ddd;
-    font-size: 2rem;
-    width: 50%;
-
-}
-.social-media-container a{
+    margin: 10px 0px;
+    text-align: end;
     text-decoration: none;
 }
+.coordinators-name:hover{
+    text-decoration: underline;
+}
 
-.social-media-logo i{
-    color: rgb(200, 200, 200);
-    font-size: 2rem;
-}
-.social-media-logo{
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 2px solid rgb(200, 200, 200);
-    position: relative;
-
-}
-.social-media-heading-text{
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-}
 .social-media-logo-container-mini{
+    position: absolute;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 50%;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    z-index: 800;
+    /* background-color: red; */
+    gap: 20px;
 }
-.social-media-gola{
+.social-media-logo{
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
 }
-.youtube:hover{
-    background-color:	#FF0000;
+.social-media-icon-div{
+    display: flex;
 }
-.instagram:hover{
-    background: linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1308c,#fd1d1d);
+.social-media-logo-container-mini a{
+    text-decoration: none;
 }
-.facebook:hover{
-    background-color: #2b4170;
-    background: -moz-linear-gradient(top, #3b5998, #2b4170);
-    background: -ms-linear-gradient(top, #3b5998, #2b4170);
-    background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+.social-media-logo i{
+    font-size: 3rem;
+    color: rgb(194, 194, 194);
+    transition-duration: .3s;
+}
+
+.fa-youtube:hover{
+    color: #ff0000;
+    transition-duration: .3s;
+}
+.fa-instagram:hover{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-duration: .3s;
+}
+.fa-facebook:hover{
+    color: #3b5998;
+    transition-duration: .3s;
 }
 .footer-bottom{
     width: 100%;
-    height: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
 }
 .footer-bottom article{
     font-size: 1.5rem;
-    color: rgb(197, 197, 197);
+    color: rgb(166, 166, 166);
     font-weight: 700;
     word-spacing: 3px;
 }
@@ -911,13 +1013,6 @@ footer{
     }
     .two-Lines-Sub-Div{
         height: 400px;
-    }
-    .coordinators-heading-text{
-        color: white;
-        font-size: 2.5rem;
-        font-weight: 600;
-        width: 70%;
-    
     }
     
 }
@@ -1099,15 +1194,18 @@ footer{
     flex-direction: column;
     justify-content: flex-end;
     }
+    .footer-container{
+        gap: 0;
+    }
     .footer-top{
         flex-direction: column;
         height: fit-content;
+        padding-bottom: 0;
+        gap: 35px;
     }
     .aquaregia-details-container{
         width: 100%;
         height: fit-content;
-
-        gap: 20px;
     }
     .aquaregia-title-div{
      
@@ -1116,10 +1214,24 @@ footer{
         justify-content: center;
         height: fit-content;
     }
+    
     .aquaregia-details-container i{
         width: 50px;
     }
-   
+    .directions,.menu,.contact-us,.socials{
+        display: block;
+        text-align: left;
+        font-size: 2.2rem;
+    }
+   .location-div{
+    margin: 10px 0px;
+   }
+   .call-div{
+    margin: 10px 0px;
+   }
+   .gmail-div{
+    margin: 10px 0px;
+   }
     .aquaregia-title-div article,.aquaregia-title-div p{
         width: 100%;
 
@@ -1128,20 +1240,19 @@ footer{
     .footer-tabs-container{
         width: 100%;
         height: fit-content;
-        padding: 20px 0px;
-        align-items: center;
-        justify-content: center;
-        order: 1;
+        /* padding: 20px 0px; */
+        align-items: flex-start;
+        justify-content: flex-start;
        
     }
     .footer-tabs-container ul{
         padding: 20px 0px;
         width: 100%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
         padding:10px 0px;
-        gap: 50px;
+        gap: 15px;
 
 
     }
@@ -1166,24 +1277,20 @@ footer{
 
       
     }
-    .social-media-container{
+    .coordinators-main-container{
         width: 100%;
         height: fit-content;
-
-    }
-    .coordinators-container{
-
-        height: fit-content;
-        padding: 20px 0;
-    }
-    .coordinators-heading-text{
-        width: 100%;
-        height: fit-content;
+        /* padding: 20px 0; */
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
         text-align: center;
+        gap: 35px;
+        margin-bottom: 20px;
     }
     .coordinators-name{
         width: 100%;
-        text-align: center;
+        text-align: left;
         font-weight: 700;
 
     }
@@ -1192,15 +1299,34 @@ footer{
         text-align: center;
         font-weight: 100;
     }
-    .social-media-logo-container-mini{
-        padding: 20px 0;
-    }
     .footer-bottom{
         width: 100%;
+        height: fit-content;
+        padding: 30px;
     }
-.social-media-heading-text{
-    display: none;
-}
+    .social-media-logo-container-mini{
+        width: 100%;
+        position:unset;
+        left: 0;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:flex-start;
+        gap:15px;
+    }
+    .social-media-icon-div{
+        gap: 20px;
+    }
+    .social-media-logo{
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .social-media-logo i{
+        font-size:3rem;
+        width: fit-content;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -1226,16 +1352,13 @@ footer{
         height: fit-content;
         width: 100%;
     }
-    #aboutCircle {
-   position: absolute;
-        height: 650px;
-        width: 650px;
-        left: -260px;
-        padding-left: 200px;
-        padding-right: 50px;
-
-
-    }
+    #aboutCircle span{
+        font-size: 5.5rem;
+}
+    #aboutCircle p{
+        width: 75%;
+        font-size: 2rem;
+}
     #bigFlex {
         display: flex;
         flex-direction: column;
@@ -1246,27 +1369,30 @@ footer{
     #flex1,#flex2,#flex3{
         height: 33.33%;
         width: 100%;
-        overflow: hidden;
+        /* overflow: hidden; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
        
     }
    
    
     
-    #infoCircle1 ,
-    #infoCircle3{
-        margin-left: 550px;
-        padding-right: 90px;
+    #infoCircle1 {
+            position:relative;
+            right: 130px;
+
     }
-    #infoCircle2{
-        margin-right: 550px;
-        padding-left: 90px;
+    #infoCircle2 {
+        position:relative;
+        left: 140px; 
     }
-    #infoCircle1 ,
-    #infoCircle2 ,
-    #infoCircle3{
-    height: 300px;
-    width: 300px;
-}
+    #infoCircle3 {
+        position:relative;
+        right: 100px;
+
+    }
     .two-Lines-Sub-Div{
     height: 600px;
     flex-direction: column;
@@ -1293,6 +1419,7 @@ footer{
         flex-direction: column;
         height: fit-content;
         gap: 10px;
+        padding-top: 20px;
     }
     #two-Lines-Sub-Div-ul #two-Lines-Sub-Div-li2{
         border: none;
@@ -1307,58 +1434,25 @@ footer{
         width: fit-content;
         overflow: scroll;
     }
-    #infoCircle1 ,
-    #infoCircle3{
-        margin-left: 500px;
-        padding-right: 150px;
-    }
-    #infoCircle2{
-        margin-right: 500px;
-        padding-left: 150px;
-    }
-    #asteroid{
-        background-image: url(asteroid.png);
-        /* background-color: red; */
-        background-size: contain;
-        height: 50px;
-        width: 50px;
-        margin-right: -100px;
-        position: absolute;
-        right: 0;
-        top: 400px;
-        /* filter: blur(2px); */
-    
-        animation: asteroid 5s infinite linear;
-    
-    }
-    @keyframes  asteroid{
-    
-        25%{
-            transform: translate(-40vw) rotate(-100deg) translateY(-20px);
-        }
-        
-        50%{
-            transform: translate(-80vw) rotate(100deg) translateY(10px);
-    
-        }
-        
-        75%{
-            transform: translate(-120vw) rotate(-30deg) translateY(20px);
-        }
-    
-        100%{
-            transform: translate(-160vw) rotate(-200deg) translateY(-10px);
-        }
-       
-    }
+   
     .footer-container{
         padding: 20px;
+        padding-bottom: 0;
     }
     .footer-bottom{
-        padding: 30px 0;
+        padding: 20px 0;
     }
 }
 
+@media screen and (max-width:650px) {
+    #aboutCircle p{
+        width: 85%;
+        font-size: 2rem;
+}
+.footer-container{
+    margin-top: 50px;
+}
+}
 @media screen and (max-width:500px) {
     html {
         font-size: 45%;
@@ -1402,38 +1496,27 @@ footer{
     .aboutMainContainer {
         margin-top: 100px;
     }
-    #aboutCircle{
-        width: 650px;
-        height: 650px;
-        padding: 0;
-        padding-left: 200px;
-        padding-right: 50px;
-        /* padding-bottom: 200px; */
-        /* padding-top: 200px; */
-    }
+   
     .majorAttractionsMaincontainer{
         margin-top: 50px;
     }
     .two-Lines-Sub-Div{
-        height: 700px;
+        height: 750px;
         background-image: url(pawel-czerwinski-W10XfpqLu4Y-unsplash.jpg);
         background-size: cover;
         background-position: center;
     }
-    .social-media-container{
-        margin-top: 20px;
+    .name{
+        color: white;
+        font-size: 2rem;
     }
-    .social-media-logo{
-        width: 50px;
-        height:50px;
+    .mobile,.email{
+        color: white;
+        font-size: 1.5rem;
     }
-    .social-media-logo-container-mini{
-        margin-top: 20px;
-        padding: 0;
-
-    }
+  
     .footer-tabs-container{
-        margin-top: 20px;
+        margin-top: 0px;
         padding: 0;
     }
 #backtotopbutton{
@@ -1448,28 +1531,8 @@ footer{
     -webkit-animation: slideranimation2 50s ease-in-out infinite alternate;
     animation: slideranimation2 50s ease-in-out infinite alternate;
 }
-@keyframes slideranimation2 {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(-90%);
-        transform: translateX(-90%);
-    }
-}
-@keyframes slideranimation {
-    0% {
-        -webkit-transform: translateX(-90%);
-        transform: translateX(-90%);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-}
 
+}
 
 
 @media screen and (max-width:430px) {
@@ -1488,14 +1551,9 @@ footer{
     .two-Lines-Sub-Div{
         height: 700px;
     }
-    #aboutCircle{
-        width: 600px;
-        height: 600px;
-        padding: 0;
-        padding-left: 200px;
-        padding-right:30px;
-        /* padding-bottom: 200px; */
-        /* padding-top: 200px; */
+    #aboutCircle p{
+        width: 95%;
+
     }
 }
 
@@ -1503,14 +1561,16 @@ footer{
     html {
         font-size: 43%;
     }
+    #aboutCircle p{
+        width: 95%;
+
+    }
     #infoCircle1 ,
     #infoCircle3{
-        margin-left: 400px;
-        padding-right: 250px;
+       right: 160px;
     }
     #infoCircle2{
-        margin-right: 400px;
-        padding-left: 250px;
+left: 160px;
     }
     #aquaregiaTitle{
         font-size: 8rem;
@@ -1529,18 +1589,10 @@ footer{
     html {
         font-size: 40%;
     }
-    #aboutCircle{
-        width: 500px;
-        height: 500px;
-        padding-right: 0;
-        padding-left: 170px;
-        padding-bottom: 300px;
-        padding-top: 300px;
-        
-    }
-    .footer-tabs-container ul{
+  
+    /* .footer-tabs-container ul{
         gap: 20px;
-    }
+    } */
    
 
 }

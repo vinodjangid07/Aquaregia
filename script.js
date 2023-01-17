@@ -1,9 +1,3 @@
-// let eventsBtn = document.getElementById("event");
-// let gamesBtn = document.getElementById("games");
-// let workshopsBtn = document.getElementById("workshops");
-// let carnivalBtn = document.getElementById("carnival");
-// let munBtn = document.getElementById("MUN");
-// let zonalBtn = document.getElementById("zonal");
 
 // preloader script
 var loader = document.getElementById("preloader");
@@ -15,7 +9,6 @@ let tabsformobileclass = document.querySelectorAll('.tabsbuttonclass')
 function hamburgerMenu() {
     document.getElementById("tabs_button2").classList.toggle("show");
     document.getElementById("navBar").classList.toggle("navbarToggleClass");
-    // document.getElementById("rotatebtn").classList.toggle("rotate")
     document.body.classList.toggle("stopscrolling")
     document.getElementById("burger-bar1").classList.toggle("hamburger-animation1");
     document.getElementById("burger-bar2").classList.toggle("hamburger-animation2");
@@ -88,3 +81,27 @@ function scrolltoTopfunction(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+// for socials 
+// window.onscroll = function(ev) {
+//   if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 400) {
+//     if (mediascreen.matches) { 
+//       document.getElementById('socials-container').style.transform = 'translateX(0px)';
+//     } else {
+//       document.getElementById('socials-container').style.transform = 'translateX(-200px)';
+//       document.getElementById('socials-container').style.transitionDuration = '.2s';
+//     }
+
+    
+//   }
+//   else{
+//       document.getElementById('socials-container').style.transform = 'translateX(0px)';
+//       document.getElementById('socials-container').style.transitionDuration = '.2s';
+//   }
+// };
+
+
+
+
+// var mediascreen = window.matchMedia("(max-width: 998px)")
