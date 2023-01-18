@@ -607,7 +607,7 @@ margin-top: 34px;
     justify-content: center;
     width: 200px;
     height: 250px;
-    background-color: rgba(18, 18, 18, 0.467);
+    background-color: rgba(33, 33, 33, 0.467);
     padding:20px 0px;
     transform-style: preserve-3d;
     border-radius: 10px;
@@ -1242,7 +1242,8 @@ footer{
     .directions,.menu,.contact-us,.socials{
         display: block;
         text-align: left;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
+
     }
    .location-div{
     margin: 10px 0px;
@@ -1410,6 +1411,11 @@ footer{
         position:relative;
         right: 100px;
 
+    }
+    .two-Lines-Sub-Div-Logo{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
     }
     .two-Lines-Sub-Div{
         width: 350px;
