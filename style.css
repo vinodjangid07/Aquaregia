@@ -505,6 +505,7 @@ margin-top: 34px;
     align-items: center;
     justify-content: center;
     width: 100%;
+
 }
 .two-Lines-Sub-Div{
     width: 70%;
@@ -580,15 +581,12 @@ margin-top: 34px;
 .category-heading{
     width: 100%;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     font-weight: 500;
-    /* background-color: blue; */
-        margin:100px 0px 50px 0px;
+    margin:150px 0px 50px 0;
     letter-spacing: 2px;
-    font-family: fastHand;
-    /* font-family: Soloist3D; */
-    /* font-family: SoloistTitle; */
+    /* font-family: fastHand; */
 }
 .category-container{
     height: fit-content;
@@ -662,7 +660,7 @@ footer{
     flex-direction: column;
     padding: 0px 70px;
     gap: 50px;
-    background-color: rgba(28, 28, 28, 0.283);
+    background-color: rgba(28, 28, 28, 0.299);
 }
 
 .footer-top{
@@ -714,7 +712,7 @@ footer{
     font-size:3rem;
     color: white;
     font-weight: 700;
-    text-decoration: underline;
+    color: rgb(129, 0, 250);
 }
 .location-div{
     width: 100%;
@@ -1242,7 +1240,9 @@ footer{
     .directions,.menu,.contact-us,.socials{
         display: block;
         text-align: left;
-        font-size: 2.5rem;
+        font-size:3rem;
+        text-decoration: none;
+        
 
     }
    .location-div{
@@ -1536,11 +1536,22 @@ footer{
         color: white;
         font-size: 2rem;
     }
-    .mobile,.email{
+    .fest-post{
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
-  
+    .category-container
+    {
+        padding:0px 20px;
+        gap: 50px;
+    }
+    .category-heading{   
+    font-size: 2.5rem;
+    margin:50px 0px;
+    }
+    .one-heading{
+        margin:100px 0px 50px 0px;
+    }
     .footer-tabs-container{
         margin-top: 0px;
         padding: 0;
@@ -1600,7 +1611,7 @@ footer{
        right: 160px;
     }
     #infoCircle2{
-left: 160px;
+        left: 160px;
     }
     #aquaregiaTitle{
         font-size: 8rem;
