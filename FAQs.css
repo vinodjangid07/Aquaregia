@@ -229,6 +229,7 @@ body {
 }
 
 
+/* footer css started */
 footer{
     /* background-image: url(kasra-assadian-QTiQ4ujnKeg-unsplash.jpg); */
     background-repeat: no-repeat;
@@ -236,22 +237,24 @@ footer{
     background-position: center;
 }
 .footer-container{
-    /* margin-top: 100px; */
+    margin-top: 200px;
     width: 100%;
-    height: 75vh;
     display: flex;
     flex-direction: column;
     padding: 0px 70px;
-    /* backdrop-filter: blur(5px); */
+    gap: 50px;
+    background-color: rgba(28, 28, 28, 0.283);
 }
+
 .footer-top{
     width: 100%;
-    height: 95%;
+    height: 250px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding-top: 50px;
+    position: relative;
+    /* background-color: red; */
 
 }
 .aquaregia-details-container{
@@ -259,17 +262,16 @@ footer{
     flex-direction: column;
     width: 30%;
     height: 100%;
-    gap: 40px;
+    gap: 0px;
+    /* background-color: #3b5998; */
 }
 .aquaregia-title-div{
     width: 100%;
-    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding-bottom: 20px;
-    
 }
 .aquaregia-title-div article{
     width: 100%;
@@ -279,23 +281,32 @@ footer{
     color: rgb(255, 255, 255);
 }
 .aquaregia-title-div p{
-    width:80%;
+    width:30%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
     font-weight: 700;
     color: #ddd;
+
+}
+.footer-content-heading{
+    width: 100%;
+    font-size:3rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: underline;
 }
 .location-div{
     width: 100%;
     display: flex;
     height: fit-content;
+    margin: 20px 0px;
 }
 .location-div a{
     text-decoration:none ;
     font-size: 2rem;
-    color: rgb(201, 201, 201);
+    color: #ddd;
     width: fit-content;
 
 }
@@ -308,18 +319,19 @@ footer{
     width: 10%;
     height: fit-content;
     font-size: 2rem;
-    color: white;
+    color: #ddd;
 }
 
 .call-div{
     width: 100%;
     display: flex;
     align-items: center;
+    margin: 20px 0px;
 }
 .call-div a{
     text-decoration: none;
     font-size: 2.2rem;
-    color: rgb(201, 201, 201);
+    color: #ddd;
 }
 .call-div a:hover{
     text-decoration:underline;
@@ -328,11 +340,12 @@ footer{
 .gmail-div{
     width: 100%;
     align-items: center;
+    margin: 20px 0px;
 
 }
 .gmail-div a{
     text-decoration: none;
-    color: rgb(201, 201, 201);
+    color: #ddd;
     font-size: 2rem;
 }
 .gmail-div a:hover{
@@ -340,20 +353,30 @@ footer{
     color: white;
 }
 .footer-tabs-container{
-    width: 40%;
+    width: 25%;
     height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items:flex-start;
     justify-content: center;
-    padding-left:80px ;
+    /* padding-left:80px ; */
+    /* background-color: blueviolet; */
+}
+.menu{
+    text-align: center;
+}
+.socials{
+    display: none;
 }
 .footer-tabs-container ul{
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 0px;
+    /* background-color: yellow; */
 }
 .footer-tabs-container ul li{
     list-style: none;
@@ -361,22 +384,24 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 15px 0px;
- 
+    margin: 20px 0px;
+    /* background-color: #fd5949; */
+    text-align: center;
 }
 .footer-tabs-container ul li a{
     width: 50%;
     height: 30px;
-    color: rgb(201, 201, 201);
+    color: #ddd;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 500;
     position: relative;
+
 }
 .footer-tabs-container ul li a:before{
     content: "";
     height: 1px;
-    background-color: rgb(215, 215, 215);
+    background-color: #ddd;
     position: absolute;
     width: 100px;
     left: 0;
@@ -395,110 +420,96 @@ footer{
 
 
 
-.social-media-container{
+.coordinators-main-container{
+    position: relative;
     width: 30%;
     height: 100%;
     display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-}
-.coordinators-container{
-    width: 100%;
-    height: 50%;
-    width:100%;
-    display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content: flex-end;
+    align-items:flex-end;
+    justify-content: flex-start;
+    /* background-color: rgb(90, 8, 8); */
+}
+.contact-us{
+    text-align: end;
 }
 
-.coordinators-heading-text{
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 600;
-    width: 50%;
-
-}
 .coordinators-name{
+    display: block;
     color: #ddd;
     font-size: 2rem;
-    width: 50%;
-    padding-top: 20px;
-
-}
-.number{
-    color: #ddd;
-    font-size: 2rem;
-    width: 50%;
-
-}
-.social-media-container a{
+    margin: 10px 0px;
+    text-align: end;
     text-decoration: none;
 }
-
-.social-media-logo i{
-    color: rgb(200, 200, 200);
-    font-size: 2rem;
-}
-.social-media-logo{
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 2px solid rgb(200, 200, 200);
-    position: relative;
-
-}
-.social-media-heading-text{
-    font-size: 2rem;
-    font-weight: 600;
+.coordinators-name:hover{
+    text-decoration: underline;
     color: white;
 }
+
 .social-media-logo-container-mini{
+    position: absolute;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 50%;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    z-index: 800;
+    /* background-color: red; */
+    gap: 20px;
 }
-.social-media-gola{
+.social-media-logo{
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
 }
-.youtube:hover{
-    background-color:	#FF0000;
+.social-media-icon-div{
+    display: flex;
 }
-.instagram:hover{
-    background: linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1308c,#fd1d1d);
+.social-media-logo-container-mini a{
+    text-decoration: none;
 }
-.facebook:hover{
-    background-color: #2b4170;
-    background: -moz-linear-gradient(top, #3b5998, #2b4170);
-    background: -ms-linear-gradient(top, #3b5998, #2b4170);
-    background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+.social-media-logo i{
+    font-size: 3rem;
+    color: #ddd;
+    transition-duration: .3s;
+}
+
+.fa-youtube:hover{
+    color: #ff0000;
+    transition-duration: .3s;
+}
+.fa-instagram:hover{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-duration: .3s;
+}
+.fa-facebook:hover{
+    color: #3b5998;
+    transition-duration: .3s;
 }
 .footer-bottom{
     width: 100%;
-    height: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
 }
 .footer-bottom article{
     font-size: 1.5rem;
-    color: rgb(197, 197, 197);
+    color: rgb(166, 166, 166);
     font-weight: 700;
     word-spacing: 3px;
 }
 
+
+/* footer ends */
 .hamburger{
     display: none;
 }
@@ -703,109 +714,136 @@ footer{
     color: black;
     border-radius: 20px;
    }
-   
-   .footer-top{
-    flex-direction: column;
-    height: fit-content;
-}
-.aquaregia-details-container{
-    width: 100%;
-    height: fit-content;
+    .footer-container{
+        gap: 0;
+    }
+    .footer-top{
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 0;
+        gap: 35px;
+    }
+    .aquaregia-details-container{
+        width: 100%;
+        height: fit-content;
+    }
+    .aquaregia-title-div{
+     
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+    
+    .aquaregia-details-container i{
+        width: 30px;
+    }
+    .directions,.menu,.contact-us,.socials{
+        display: block;
+        text-align: left;
+        font-size: 2.2rem;
+    }
+   .location-div{
+    margin: 10px 0px;
+   }
+   .call-div{
+    margin: 10px 0px;
+   }
+   .gmail-div{
+    margin: 10px 0px;
+   }
+    .aquaregia-title-div article,.aquaregia-title-div p{
+        width: 100%;
 
-    gap: 20px;
-}
-.aquaregia-title-div{
- 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-}
-.aquaregia-details-container i{
-    width: 50px;
-}
-
-.aquaregia-title-div article,.aquaregia-title-div p{
-    width: 100%;
-
-    text-align: center;
-}
-.footer-tabs-container{
-    width: 100%;
-    height: fit-content;
-    padding: 20px 0px;
-    align-items: center;
-    justify-content: center;
-    order: 1;
-   
-}
-.footer-tabs-container ul{
-    padding: 20px 0px;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding:10px 0px;
-    gap: 50px;
+        text-align: center;
+    }
+    .footer-tabs-container{
+        width: 100%;
+        height: fit-content;
+        /* padding: 20px 0px; */
+        align-items: flex-start;
+        justify-content: flex-start;
+       
+    }
+    .footer-tabs-container ul{
+        padding: 20px 0px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding:10px 0px;
+        gap: 15px;
 
 
-}
-.footer-tabs-container ul li{
-    width: fit-content;
-    margin: 0;
-}
+    }
+    .footer-tabs-container ul li{
+        width: fit-content;
+        margin: 0;
+        font-weight: 400;
+    }
+    
+    .footer-tabs-container ul li a{
+        padding: 0;
+        width:fit-content;
+        height: fit-content;
+        text-align: center;
+        font-weight: 400;
+    }
+    .footer-tabs-container ul .repeated-tabs{
+        display: none;
+        width: 0;
+    }
+    .footer-tabs-container ul li a:before{
+        width: 0px;
+        height: 0px;
 
-.footer-tabs-container ul li a{
-    padding: 0;
-    width:fit-content;
-    height: fit-content;
-    text-align: center;
-}
-.footer-tabs-container ul .repeated-tabs{
-    display: none;
-    width: 0;
-}
-.footer-tabs-container ul li a:before{
-    width: 0px;
-    height: 0px;
+      
+    }
+    .coordinators-main-container{
+        width: 100%;
+        height: fit-content;
+        /* padding: 20px 0; */
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: center;
+        gap: 35px;
+        margin-bottom: 20px;
+    }
+    .coordinators-name{
+        width: 100%;
+        text-align: left;
+        font-weight: 400;
 
-  
-}
-.social-media-container{
-    width: 100%;
-    height: fit-content;
-
-}
-.coordinators-container{
-
-    height: fit-content;
-    padding: 20px 0;
-}
-.coordinators-heading-text{
-    width: 100%;
-    height: fit-content;
-    text-align: center;
-}
-.coordinators-name{
-    width: 100%;
-    text-align: center;
-    font-weight: 700;
-
-}
-.number{
-    width: 100%;
-    text-align: center;
-    font-weight: 100;
-}
-.social-media-logo-container-mini{
-    padding: 20px 0;
-}
-.footer-bottom{
-    width: 100%;
-}
-.social-media-heading-text{
-display: none;
-}
+    }
+    .footer-bottom{
+        width: 100%;
+        height: fit-content;
+        padding: 30px;
+    }
+    .social-media-logo-container-mini{
+        width: 100%;
+        position:unset;
+        left: 0;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:flex-start;
+        gap:15px;
+    }
+    .social-media-icon-div{
+        gap: 20px;
+    }
+    .social-media-logo{
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .social-media-logo i{
+        font-size:3rem;
+        width: fit-content;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -814,12 +852,18 @@ display: none;
     }
     .footer-container{
         padding: 20px;
+        padding-bottom: 0;
     }
     .footer-bottom{
-        padding: 30px 0;
+        padding: 20px 0;
     }
 }
-
+@media screen and (max-width:650px) {
+ 
+.footer-container{
+    margin-top: 50px;
+}
+}
 @media screen and (max-width:500px) {
     html {
         font-size: 45%;
@@ -838,26 +882,16 @@ display: none;
 
     }
     
-    .social-media-container{
-        margin-top: 20px;
-    }
-    .social-media-logo{
-        width: 50px;
-        height:50px;
-    }
-    .social-media-logo-container-mini{
-        margin-top: 20px;
-        padding: 0;
-
-    }
+    
     .footer-tabs-container{
-        margin-top: 20px;
+        margin-top: 0px;
         padding: 0;
     }
 #backtotopbutton{
     width: 7.5rem;
     height: 7.5rem;
 }
+
 }
 
 
@@ -883,9 +917,7 @@ display: none;
     html {
         font-size: 40%;
     }
-    .footer-tabs-container ul{
-        gap: 20px;
-    }
+
 }
 
 /* responsive code above */

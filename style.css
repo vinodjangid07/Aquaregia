@@ -507,31 +507,35 @@ margin-top: 34px;
     width: 100%;
 }
 .two-Lines-Sub-Div{
-    width: 80%;
-    height: 350px;
+    width: 70%;
+    height: fit-content;
     border-radius: 20px;
     background-image: url(pawel-czerwinski-W10XfpqLu4Y-unsplash.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
-
+    overflow: hidden;
 }
 .two-Lines-Sub-Div-Logo{
-    width: 30%;
+    width: 350px;
+    height: 350px;
     font-size: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    background-color: transparent;
+    border: 2px solid rgb(57, 57, 57);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .two-Lines-Sub-Div-Description-main-div{
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 20px;
     padding-bottom: 20px;
-   
+    padding-left: 70px;
 
 }
 #two-Lines-Sub-Div-Title{
@@ -555,7 +559,7 @@ margin-top: 34px;
     justify-content: space-between;
     font-weight:700;
     width: 100%;
-    height: 50px;
+    height: fit-content;
     align-items: center;
 }
 #two-Lines-Sub-Div-ul li{
@@ -600,46 +604,51 @@ margin-top: 34px;
     display: flex;
     flex-direction:column;
     align-items: center;
+    justify-content: center;
     width: 200px;
     height: 250px;
-    background: linear-gradient(rgba(236, 236, 236, 0.112),rgba(203, 203, 203, 0.015));
-    padding:30px 0px;
+    background-color: rgba(18, 18, 18, 0.467);
+    padding:20px 0px;
     transform-style: preserve-3d;
     border-radius: 10px;
     gap: 20px;  
 }
 .dp{
-    height: 70%;
+    height: 100%;
     width: 80%;
     background-color: transparent;
-    transform: translateZ(0px);
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 .dp img{
-    width: 100%;
+    height: 100%;
 }
 .info{
     display: flex;
     flex-direction: column;
-    height: 30%;
+    height: 20%;
     width: 100%;
     align-items: center;
     justify-content: space-around;
     transform: translateZ(0px);
 }
-.profile-card:hover .info{
-    transform: translateZ(50px);
-}
+
+
 .name{
     color: white;
     font-size: 1.5rem;
 }
-.mobile,.email{
+
+.fest-post{
     color: white;
     font-size: 1rem;
 }
 
+/* footer css started */
 footer{
     /* background-image: url(kasra-assadian-QTiQ4ujnKeg-unsplash.jpg); */
     background-repeat: no-repeat;
@@ -703,7 +712,7 @@ footer{
 .footer-content-heading{
     width: 100%;
     font-size:3rem;
-    color: rgb(225, 225, 225);
+    color: white;
     font-weight: 700;
     text-decoration: underline;
 }
@@ -716,7 +725,7 @@ footer{
 .location-div a{
     text-decoration:none ;
     font-size: 2rem;
-    color: rgb(201, 201, 201);
+    color: #ddd;
     width: fit-content;
 
 }
@@ -729,7 +738,7 @@ footer{
     width: 10%;
     height: fit-content;
     font-size: 2rem;
-    color: white;
+    color: #ddd;
 }
 
 .call-div{
@@ -741,7 +750,7 @@ footer{
 .call-div a{
     text-decoration: none;
     font-size: 2.2rem;
-    color: rgb(201, 201, 201);
+    color: #ddd;
 }
 .call-div a:hover{
     text-decoration:underline;
@@ -755,7 +764,7 @@ footer{
 }
 .gmail-div a{
     text-decoration: none;
-    color: rgb(201, 201, 201);
+    color: #ddd;
     font-size: 2rem;
 }
 .gmail-div a:hover{
@@ -801,7 +810,7 @@ footer{
 .footer-tabs-container ul li a{
     width: 50%;
     height: 30px;
-    color: rgb(201, 201, 201);
+    color: #ddd;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 500;
@@ -811,7 +820,7 @@ footer{
 .footer-tabs-container ul li a:before{
     content: "";
     height: 1px;
-    background-color: rgb(215, 215, 215);
+    background-color: #ddd;
     position: absolute;
     width: 100px;
     left: 0;
@@ -854,6 +863,7 @@ footer{
 }
 .coordinators-name:hover{
     text-decoration: underline;
+    color: white;
 }
 
 .social-media-logo-container-mini{
@@ -883,7 +893,7 @@ footer{
 }
 .social-media-logo i{
     font-size: 3rem;
-    color: rgb(194, 194, 194);
+    color: #ddd;
     transition-duration: .3s;
 }
 
@@ -916,6 +926,7 @@ footer{
     font-weight: 700;
     word-spacing: 3px;
 }
+/* footer ends */
 .hamburger{
     display: none;
 }
@@ -997,6 +1008,15 @@ footer{
         }
     }
 }
+@media screen and (max-width:1450px) {
+    html {
+        font-size: 60%;
+    }
+.two-Lines-Sub-Div{
+    width: 80%;
+}    
+    
+}
 
 @media screen and (max-width:1200px) {
     html {
@@ -1012,8 +1032,9 @@ footer{
 
     }
     .two-Lines-Sub-Div{
-        height: 400px;
-    }
+        width: 95%;
+    }  
+    
     
 }
 
@@ -1216,7 +1237,7 @@ footer{
     }
     
     .aquaregia-details-container i{
-        width: 50px;
+        width: 30px;
     }
     .directions,.menu,.contact-us,.socials{
         display: block;
@@ -1391,17 +1412,13 @@ footer{
 
     }
     .two-Lines-Sub-Div{
-    height: 600px;
+        width: 350px;
+    height: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     }
-    .two-Lines-Sub-Div-Logo{
-        height: 30%;
-        width: 100%;
-    }
     .two-Lines-Sub-Div-Description-main-div{
-        height: 70%;
         width: 100%;
         padding: 40px;
         
@@ -1416,7 +1433,7 @@ footer{
         flex-direction: column;
         height: fit-content;
         gap: 10px;
-        padding-top: 20px;
+        padding-top: 50px;
     }
     #two-Lines-Sub-Div-ul #two-Lines-Sub-Div-li2{
         border: none;
@@ -1498,10 +1515,16 @@ footer{
         margin-top: 50px;
     }
     .two-Lines-Sub-Div{
-        height: 750px;
         background-image: url(pawel-czerwinski-W10XfpqLu4Y-unsplash.jpg);
         background-size: cover;
         background-position: center;
+    }
+    .two-Lines-Sub-Div-Description-main-div{
+        height: fit-content;
+    }
+    #two-Lines-Sub-Div-Description{
+        height: fit-content;
+        margin-top: 20px;
     }
     .name{
         color: white;
@@ -1545,12 +1568,16 @@ footer{
         margin-right: 400px;
         padding-left: 150px;
     }
-    .two-Lines-Sub-Div{
-        height: 700px;
-    }
     #aboutCircle p{
         width: 95%;
 
+    }
+    .two-Lines-Sub-Div{
+        width: 300px;
+    }
+    .two-Lines-Sub-Div-Logo{
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -1578,19 +1605,17 @@ left: 160px;
     .hamburger{
         margin-right: 20px;
     }
-    .two-Lines-Sub-Div{
-        height: 800px;
-    }
 }
 @media screen and (max-width:300px) {
     html {
         font-size: 40%;
     }
-  
-    /* .footer-tabs-container ul{
-        gap: 20px;
-    } */
-   
+    .two-Lines-Sub-Div{
+        width: 100%;
+    }
+    .two-Lines-Sub-Div-Logo{
+        width: 100%;
+    }
 
 }
 @media screen and (max-height:650px) and (max-width:350px){
