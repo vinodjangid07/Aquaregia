@@ -35,7 +35,7 @@ if(li.classList.contains(current)){
 
 window.onscroll = function(ev) {
   if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 150) {
-      document.getElementById('quickAccess').style.transform = 'translateX(-200px)';
+      document.getElementById('quickAccess').style.transform = 'translateX(-250px)';
       document.getElementById('quickAccess').style.transitionDuration = '.2s';
 
 
