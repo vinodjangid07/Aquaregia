@@ -36,7 +36,8 @@ html {
 body {
   overflow-x: hidden;
   background-image: url(Stars-background-dark.svg);
-  background-size: 60%;
+  background-size:60%;
+  position: relative;
 
 }
 
@@ -45,7 +46,40 @@ body {
   overflow: hidden;
 }
 /* after clicking hamburger icon scrolling will disable */
+.blackhole{
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: light 2s linear infinite;
+  z-index: -1;
+}
+.blackhole img{
+  width: 100%;
+  filter:drop-shadow( 0px 0px 2px rgb(255, 196, 196));
+}
+@keyframes light{
+  0%{
+      filter: brightness(1);
+  }
+  30%{
+      filter: brightness(1.9);
+  }
+  60%{
+      filter: brightness(1);
+  }
+  90%{
+      filter: brightness(1.4);
 
+  }
+  90%{
+      filter: brightness(1);
+  }
+}
 #navBar {
   display: flex;
   flex-direction: row;
@@ -239,6 +273,7 @@ display: flex;
     width: 15vw;
     justify-self: center;
     align-self: center;
+    mix-blend-mode: difference;
    
 }
 .Flex2 a{
@@ -247,10 +282,12 @@ display: flex;
 }
 .Flex2 {
     height:auto;
-    
     display: flex;
     justify-content: space-evenly;
 
+}
+.secondline{
+  margin-top: 50px;
 }
 .smallFlex{
     width: 250px;
@@ -258,21 +295,27 @@ display: flex;
     display: flex;
     flex-direction: column;
     height: 280px;
-    background-color: rgba(120, 120, 120, 0.225);
+    background: linear-gradient(rgba(26, 26, 26, 0.145),rgba(17, 17, 17, 0.563));
     margin: 1%;
     justify-content: center;
     align-items: center;
     transition: all 300ms;
+
 }
 .smallFlex:hover{
   transform: scale(1.08);
   transition: all 300ms;
+}
+.smallFlex:hover + .imgFlex{
+  height: 100%;
+  width: 100%;
 }
 .imgFlex{
   height: 84%;
   width: 93%;
   background-color: #fff;
   margin-top: 8px;
+
 }
 .bachaFlex{
 
@@ -282,8 +325,9 @@ display: flex;
   font-size: 2.5vh;
   text-align: center;
  padding-top: 8px;
- color: antiquewhite;
+ color: white;
  margin-bottom: 5px;
+
 }  
 /* =========IMAGES .CSS======== */
  #imgFlexDa1{
@@ -338,6 +382,7 @@ footer{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  mix-blend-mode: difference;
 }
 .footer-container{
   margin-top: 200px;
@@ -980,6 +1025,9 @@ margin: 10px 0px;
   html {
       font-size: 50%;
   }
+  /* .blackhole{
+    
+  } */
   .footer-container{
     padding: 20px;
     padding-bottom: 0;

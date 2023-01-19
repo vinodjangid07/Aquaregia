@@ -24,15 +24,21 @@ arrow.addEventListener("click", function(){
 function rulesAppear(e){
     arrow2.style.transform='rotate(180deg)';
     arrow2.style.translate='12px';
-    rulesContent.style.height='auto';
+    // rulesContent.style.height='fit-content';
+    rulesContent.style.transform = 'scaleY(1)';
+    rulesContent.style.transformOrigin = "top";
+    rulesContent.style.opacity = '1';
     rulesContent.scrollIntoView();
-
+    arrow2.style.transitionDuration = '.5s';
+    rulesContent.style.transitionDuration = '.5s';
         
 }
 
 function rulesDisappear(e){
     arrow2.style.transform='rotate(-0deg)';
     arrow2.style.translate='0px';
-    rulesContent.style.height='0px';
+    rulesContent.style.opacity = '0';
+    // rulesContent.style.height='0px';
+    rulesContent.style.transform = 'scaleY(0)';
 
 }

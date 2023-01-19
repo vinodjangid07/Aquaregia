@@ -67,16 +67,8 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center ;
-    /* mix-blend-mode: difference; */
     width: 100px;
     height: 100px;
-    /* background-color: red; */
-
-    
-    /* filter:drop-shadow(0px 0px 2px rgb(214, 202, 250))
-    drop-shadow(0px 0px 5px rgb(151, 116, 255))
-    drop-shadow(0px 0px 10px rgb(116, 71, 251))
-    drop-shadow(0px 0px 15px rgba(64, 0, 255, 0.81)); */
 }
 
 /* after clicking hamburger icon scrolling will disable */
@@ -227,7 +219,6 @@ body {
     background-color: white;
     color: black;
     transform: scale(1.05);
-
 }
 
 .aboutMainContainer {
@@ -237,15 +228,11 @@ body {
     display: flex;
 }
 
-
-
 #bigFlex {
     display: flex;
     flex-direction: column;
     width: 40%;
     height: 100%;
-
-
 }
 
 #flex1,
@@ -265,13 +252,11 @@ body {
     z-index: 99;
 }
 
-
 #infoCircle1{
     background-image: url(redPlanet.svg);
     background-position: center;
     background-size: 103%;
     background-repeat: no-repeat;
-    /* border: 10px solid black; */
 }
 #infoCircle2{
     background-image: url(bluePlanet.svg);
@@ -285,7 +270,6 @@ body {
     background-position: center;
     background-size: 120%;
     background-repeat: no-repeat;
-    /* border: 10px solid rgb(229, 0, 0); */
 }
 #infoCircle1 ,
 #infoCircle2 ,
@@ -331,7 +315,6 @@ body {
         font-weight: 500;
         color: white;
     }
-
 #about {
     width: 80%;
     height: 100%;
@@ -340,13 +323,9 @@ body {
     justify-content: center;
 
 }
-
 #aboutCircle {
-   
     height: 900px;
     width: 900px;
- 
-
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -355,20 +334,15 @@ body {
     transition-duration: .5s;
     position: relative;
     text-align: center;
-   margin-left: 20px;
 }
 #aboutCircle p{
-
-    /* background-color: red   ; */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* letter-spacing: 3px; */
     margin-bottom: 100px;
     width: 55%;
     font-size: 1.6rem;
-    
     color: #edb1e6;
     font-weight: 300;
     letter-spacing: 3px;
@@ -377,7 +351,6 @@ body {
 #aboutCircle:hover{
     transform: scale(1.1);
     transition-duration: .5s;
-    /* rotate: -5deg; */
     
 }
 #aboutCircle::before{
@@ -392,7 +365,6 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 @keyframes blackHoleSpin{
@@ -421,85 +393,8 @@ body {
 }
 
 
-.majorAttractionsMaincontainer{
-    width: 100%;
-    height: fit-content;
-    margin-top: 200px;
-    padding-right: 40px;
-}
-
-#major-attraction-smallnavbar::-webkit-scrollbar{
-    display: none;
-}
-#navbar-tabs::-webkit-scrollbar{
-    display: none;
-}
-#major-attraction-smallnavbar{
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-#navbar-tabs{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-#navbar-tabs li{
-    font-size: 2.5rem;
-    color: white;
-    font-weight: 200;
-    padding: 2px 15px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 0;
-}
-#navbar-tabs li:hover{
-    border: 1px solid white;
-    color: white;
-
-}
-
-
-#attraction-slider{
-margin-top: 34px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    overflow-x: scroll;
-    gap: 30px;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.image-div{
-   width: fit-content;
-   height: fit-content;
-   scroll-snap-align: start;
-}
-.image-div img{
-    height: 300px;
-    transition-duration: 0.3s;
-   
-}
-.image-div img:hover{
-    transform:scale(1.05);
-   
-}
-#attraction-slider::-webkit-scrollbar{
-    display: none;
-}
-.active-tab{
-    border: 1px solid white;
-    color: white;
-}
 .two-Lines-About-Aquaregia-Theme-Container{
     margin-top: 200px;
-  
     height: fit-content;
     display: flex;
     align-items: center;
@@ -551,6 +446,7 @@ margin-top: 34px;
 #two-Lines-Sub-Div-Description{
     font-size: 2rem;
     color: white;
+    text-align: justify;
 }
 #two-Lines-Sub-Div-ul{
     list-style: none;
@@ -575,7 +471,7 @@ margin-top: 34px;
 #two-Lines-Sub-Div-li2{
     border-left: 2px solid white;
     border-right: 2px solid white;
-      padding: 0px 40px;
+    padding: 0px 40px;
 }
 
 .category-heading{
@@ -648,7 +544,6 @@ margin-top: 34px;
 
 /* footer css started */
 footer{
-    /* background-image: url(kasra-assadian-QTiQ4ujnKeg-unsplash.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -671,7 +566,6 @@ footer{
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
-    /* background-color: red; */
 
 }
 .aquaregia-details-container{
@@ -680,7 +574,6 @@ footer{
     width: 30%;
     height: 100%;
     gap: 0px;
-    /* background-color: #3b5998; */
 }
 .aquaregia-title-div{
     width: 100%;
@@ -776,8 +669,6 @@ footer{
     flex-direction: column;
     align-items:flex-start;
     justify-content: center;
-    /* padding-left:80px ; */
-    /* background-color: blueviolet; */
 }
 .menu{
     text-align: center;
@@ -791,9 +682,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     gap: 0px;
-    /* background-color: yellow; */
 }
 .footer-tabs-container ul li{
     list-style: none;
@@ -802,7 +691,6 @@ footer{
     align-items: center;
     justify-content: center;
     margin: 20px 0px;
-    /* background-color: #fd5949; */
     text-align: center;
 }
 .footer-tabs-container ul li a{
@@ -834,9 +722,6 @@ footer{
     transform: scale(1);
     transition-duration: .5s;
 }
-
-
-
 .coordinators-main-container{
     position: relative;
     width: 30%;
@@ -845,7 +730,6 @@ footer{
     flex-direction: column;
     align-items:flex-end;
     justify-content: flex-start;
-    /* background-color: rgb(90, 8, 8); */
 }
 .contact-us{
     text-align: end;
@@ -873,7 +757,6 @@ footer{
     align-items: center;
     justify-content: center;
     z-index: 800;
-    /* background-color: red; */
     gap: 20px;
 }
 .social-media-logo{
@@ -948,7 +831,6 @@ footer{
     background-size: contain;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.585) ; */
     filter: drop-shadow(5px 10px 1px black);
     z-index: 101;
     text-align: center;

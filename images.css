@@ -3,11 +3,11 @@ background-image: url(photos/daS.jpg);
 background-size: 100%;
 }
 #imgFlexDa2{
-background-image: url(photos/daD.webp);
+background-image: url(photos/daD.png);
 background-size: 100%;
 }
 #imgFlexDa3{
-background-image: url(photos/daG1.jpg);
+background-image: url(photos/daG.jpeg);
 background-size: 100%;
 }
 #imgFlexMu1{
@@ -42,8 +42,17 @@ background-size: 100%;
 background-image: url(photos/pCR.png);
 background-size: 100%;
 }
-#imgFlexP3{
-background-image: url(photos/pF.jpg);
+
+#imgFlexT1{
+background-image: url(photos/tD.jpg);
+background-size: 100%;
+}
+#imgFlexT2{
+background-image: url(photos/tH.jpg);
+background-size: 100%;
+}
+#imgFlexT3{
+background-image: url(photos/tC.jpg);
 background-size: 100%;
 }
 #imgFlexL1{
@@ -59,7 +68,7 @@ background-image: url(photos/lD.jpg);
 background-size: 100%;
 }
 #imgFlexL4{
-background-image: url(photos/lP.jfif);
+background-image: url(photos/lP.jpg);
 background-size: 100%;
 }
 #imgFlexL5{
@@ -85,6 +94,14 @@ background-size: 100%;
 #imgFlexA5{
 background-image: url(photos/aRW.webp);
 background-size: 100%;
+}
+#imgFlexF1{
+    background-image: url(photos/fRW.webp);
+    background-size: 100%;
+}
+#imgFlexF2{
+    background-image: url(photos/fM.jpeg);
+    background-size: 100%;
 }
 #imgFlexMi1{
 background-image: url(photos/MiToW.jpg);
