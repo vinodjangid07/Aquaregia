@@ -75,6 +75,8 @@ function scrollFunction(){
       mybutton.style.display = "none";
      
       }
+      document.getElementById('aquaregiaTitleContainer').style.transform = 
+      translateX('-500px');
 }
 
 function scrolltoTopfunction(){
@@ -82,26 +84,3 @@ function scrolltoTopfunction(){
   document.documentElement.scrollTop = 0;
 }
 
-
-// for socials 
-// window.onscroll = function(ev) {
-//   if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 400) {
-//     if (mediascreen.matches) { 
-//       document.getElementById('socials-container').style.transform = 'translateX(0px)';
-//     } else {
-//       document.getElementById('socials-container').style.transform = 'translateX(-200px)';
-//       document.getElementById('socials-container').style.transitionDuration = '.2s';
-//     }
-
-    
-//   }
-//   else{
-//       document.getElementById('socials-container').style.transform = 'translateX(0px)';
-//       document.getElementById('socials-container').style.transitionDuration = '.2s';
-//   }
-// };
-
-
-
-
-// var mediascreen = window.matchMedia("(max-width: 998px)")

@@ -295,7 +295,8 @@ footer{
     font-size:3rem;
     color: white;
     font-weight: 700;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: rgb(217, 0, 250);
 }
 .location-div{
     width: 100%;
@@ -741,7 +742,7 @@ footer{
     .directions,.menu,.contact-us,.socials{
         display: block;
         text-align: left;
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
    .location-div{
     margin: 10px 0px;
@@ -898,13 +899,13 @@ footer{
 
 @media screen and (max-width:430px) {
     html {
-        font-size: 40%;
+        font-size: 44%;
     }
 }
 
 @media screen and (max-width:375px) {
     html {
-        font-size: 40%;
+        font-size: 43%;
     }
     #navBar{
         padding-left: 20px;
@@ -917,7 +918,9 @@ footer{
     html {
         font-size: 40%;
     }
-
+    .footer-container{
+        padding: 10px;
+    }
 }
 
 /* responsive code above */

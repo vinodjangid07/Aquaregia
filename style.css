@@ -615,7 +615,7 @@ margin-top: 34px;
     height: 100%;
     width: 80%;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;   
     display: flex;
     align-items: center;
@@ -712,7 +712,7 @@ footer{
     font-size:3rem;
     color: white;
     font-weight: 700;
-    color: rgb(129, 0, 250);
+    color: rgb(217, 0, 250);
 }
 .location-div{
     width: 100%;
@@ -1627,13 +1627,57 @@ footer{
     html {
         font-size: 40%;
     }
+   
+    #aquaregiaTitle{
+        font-size: 7rem;
+    }
+    .aquaregiaTitleContainer {
+        background-size: 200%;
+    }   
+    #toInfinity {
+    font-size: 2.2rem;
+    }
+    .book-slot-btn-container {
+        justify-content: center;
+        align-items: center;
+    }
+    #bookSlotBtn{
+        height: 30px;
+        font-size: 1.2rem;
+    }
+    #aboutCircle{
+        margin-left: 0;
+    }
+    #aboutCircle span {
+        margin-bottom: 21px;
+    }
+    #aboutCircle p {
+        width: 85%;
+        font-size: 1.7rem;
+    }
     .two-Lines-Sub-Div{
         width: 100%;
     }
     .two-Lines-Sub-Div-Logo{
         width: 100%;
     }
-
+    .two-Lines-Sub-Div{
+        width: 80%;
+    }
+    .two-Lines-Sub-Div-Logo{
+        width: 100%;
+        height: 250px;
+    }
+    .two-Lines-Sub-Div-Description-main-div{
+        width: 100%;
+        padding: 10px;
+        padding-bottom: 40px;
+        
+    }
+    .footer-container{
+        padding: 10px;
+    }
+   
 }
 @media screen and (max-height:650px) and (max-width:350px){
     .book-slot-btn-container{
