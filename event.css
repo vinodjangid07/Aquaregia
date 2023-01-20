@@ -72,7 +72,7 @@ main {
   display: inline-block;
   font-weight: 700;
   letter-spacing: 0.05em;
-  margin-top: 50px;
+  margin-top: 100px;
   outline: none;
   overflow: visible;
   padding: 1.25em 3em;
@@ -165,12 +165,19 @@ main {
   right: 0;
   width: 0;
  }
+
+ .border-line{
+  margin-top: 100px;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(55, 55, 55);
+ }
 #alignment {
   display: flex;
   flex-direction: row;
   /* justify-content: center; */
   align-items: center;
-  margin-top: 18vh;
+  margin-top: 100px;
   margin-left: -2vw;
 }
 #rulesHeader {
@@ -213,7 +220,7 @@ svg {
     width: 140px;
     display: inline-block;
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color:  rgb(255, 255, 255);
     color: black;
     font-family: sans-serif;
     text-decoration: none;
@@ -223,6 +230,7 @@ svg {
     border: none;
     margin-left: 2vw;
     margin-right: 2vw;
+    font-weight: 500;
    }
    
    .download:hover {
@@ -331,12 +339,14 @@ li {
 #coordinatorsss {
   display: flex;
   justify-content: space-around;
+  padding: 30px;
 }
 .coordinator {
   text-align: center;
   display: flex;
   flex-direction: column;
   font-size: 1.8rem;
+  gap: 5px;
 }
 .coordinator div {
   font-weight: bold;
@@ -434,11 +444,35 @@ li {
   html {
     font-size: 45%;
   }
+  .fancy{
+    margin-top: 50px;
+  }
   #heading{
-    margin-top: 100px;
+    margin-top: 50px;
+  }
+  #content{
+    margin-top: 10px;
+  }
+  .border-line{
+    margin-top: 50px;
   }
   #alignment{
-    margin-top: 80px;
+    margin-top: 50px;
+  }
+  h2{
+    font-size: 2.7rem;
+  }
+  li{
+    font-size: 1.8rem;
+    word-spacing: 2px;
+    padding: 1px 0px;
+  }
+  #coordinatorsss{
+    display: flex;
+    gap: 20px;
+  }
+  .coordinator{
+    font-size: 2.2rem;
   }
 }
 @media screen and (max-width: 450px) {
@@ -463,9 +497,7 @@ li {
     font-size: 40%;
   }
 }
-@media screen and (max-width: 370px) {
-   
-  }
+
 @media screen and (max-width: 300px) {
     html {
       font-size: 40%;
