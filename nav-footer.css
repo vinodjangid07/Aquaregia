@@ -535,13 +535,15 @@ footer{
  }
  .tabs_button2{
   z-index: 999;
-  padding-top:100px;
   height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
   right: 0;
-  display: block;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   color: white;
   text-decoration: none;
