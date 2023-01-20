@@ -25,6 +25,17 @@ html {
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     cursor:default;
 }
+::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb{
+   background-color: rgb(255, 255, 255);
+   /* border-radius: 20px; */
+
+}
 .bigdaddy-flexbox{
     display: flex;
     flex-direction: row;
@@ -260,6 +271,8 @@ display: none;
     }
     .login-main-container{
         width: 100%;
+        background-image: url(Stars-background-dark.svg);
+        background-size: 100%;
     }
     .side-wallpaper-main-container{
         width: 0%;
@@ -280,14 +293,6 @@ display: none;
 @media screen and (max-width:500px) {
     html {
         font-size: 45%;  
-    }
-    .login-main-container{
-        background-image: url(izabel-ouwdw--XNzo-unsplash-min.jpg);
-        background-position: center;
-        background-attachment: fixed;
-        background-size: 200%;
-        background-repeat: no-repeat;
-        background-color: rgb(0, 0, 0);
     }
     #arrow-left{
         mix-blend-mode: lighten;

@@ -33,13 +33,13 @@ body{
     
 }
 ::-webkit-scrollbar{
-    width: 7px;
+    width: 2px;
 }
 ::-webkit-scrollbar-track {
     background: #000;
 }
 ::-webkit-scrollbar-thumb{
-   background-color: rgb(60, 200, 255);
+   background-color: rgb(255, 255, 255);
    /* border-radius: 20px; */
 
 }
@@ -321,6 +321,9 @@ display: none;
     }
     #eyetoggle{
         height: 50px;
+    }
+    .register{
+        padding-bottom: 50px;
     }
 }
 

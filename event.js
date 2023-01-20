@@ -42,3 +42,12 @@ function rulesDisappear(e){
     rulesContent.style.transform = 'scaleY(0)';
 
 }
+
+
+let scrolldown = document.getElementById('scrolldown');
+
+scrolldown.addEventListener('click',scrolldownfunction);
+
+function scrolldownfunction(){
+    document.getElementById('coordinatorsss').scrollIntoView();
+}

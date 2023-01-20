@@ -150,6 +150,17 @@ let PasswordInput = document.getElementById("password");
             alertMsg.style.display = "block"
         }
     }
+    PasswordInput.onkeyup = function didnotmatchMsgSecond(){
+        if(PasswordInput.value == PasswordInput2.value){
+            
+            
+            alertMsg.style.display = "none";
+        }
+        else{
+            alertMsg.style.color = "red";
+            alertMsg.style.display = "block"
+        }
+    }
 
 
 </script>
