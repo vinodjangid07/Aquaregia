@@ -531,13 +531,13 @@ footer{
   
   }
  .tabs_button{
-   transform: translateX(1000px);
+
   z-index: 999;
   height: 100%;
   width: 100%;
   position: fixed;
+  left: 1000px;
   top: 0;
-  right: 0;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -559,7 +559,8 @@ footer{
 }
  .show{
   /* display: block; */
-  transform: translateX(0px);
+  /* transform: translateX(0px); */
+  left: 0;
   transition-duration: .5s;
 
  }
