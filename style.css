@@ -561,6 +561,26 @@ body {
         height:800px;
         position: relative;
     }
+    #aboutCircle:hover{
+        transform: scale(1);
+        transition-duration: .5s;
+        
+    }
+    #aboutCircle:hover::before{
+        transform: scale(0);
+        transition-duration: .5s;
+        rotate: 0deg;
+            animation: blackHoleSpin 300s linear infinite;
+        animation-fill-mode: forwards;
+    }
+    @keyframes blackHoleSpin{
+        0%{
+            transform:  rotate(0deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
     .aquaregiaTitleContainer {
         background-size: 100vh;
         
