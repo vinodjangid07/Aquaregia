@@ -150,7 +150,7 @@ main {
 .category-heading {
   width: 100%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   color: white;
   font-weight: 500;
   margin: 100px 0px 50px 0px;
@@ -388,6 +388,9 @@ main {
   html {
     font-size: 45%;
   }
+  main{
+    padding-top:0px ;
+  }
   #navBar {
     padding: 0px 20px;
   }
@@ -399,6 +402,10 @@ main {
     justify-content: flex-start;
     gap: 40px;
     overflow: scroll;
+  }
+  .category-heading {
+    font-size: 4rem;
+    margin: 80px 0px 50px 0px;
   }
   .name{
     font-size: 2.7rem;
