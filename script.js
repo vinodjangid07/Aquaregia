@@ -5,19 +5,22 @@ window.addEventListener("load", function () {
   loader.style.display = "none";
 })
 
-let tabsformobileclass = document.querySelectorAll('.tabsbuttonclass')
-function hamburgerMenu() {
-    document.getElementById("tabs_button2").classList.toggle("show");
-    document.getElementById("navBar").classList.toggle("navbarToggleClass");
-    document.body.classList.toggle("stopscrolling")
-    document.getElementById("burger-bar1").classList.toggle("hamburger-animation1");
-    document.getElementById("burger-bar2").classList.toggle("hamburger-animation2");
-    document.getElementById("burger-bar3").classList.toggle("hamburger-animation3");
-
-      tabsformobileclass.forEach((item) =>
-      item.classList.toggle('showmobiletabs'));
-    
-  }
+  // code for hamburger mobile
+    // let tabsformobileclass = document.querySelectorAll('.tabsbuttonclass')
+    function hamburgerMenu() {
+      document.getElementById("tabs_button").classList.toggle("show");
+      // document.getElementById("navBar").classList.toggle("navbarToggleClass");
+      // document.getElementById("rotatebtn").classList.toggle("rotate")
+      document.body.classList.toggle("stopscrolling");
+      document.getElementById("burger-bar1").classList.toggle("hamburger-animation1");
+      document.getElementById("burger-bar2").classList.toggle("hamburger-animation2");
+      document.getElementById("burger-bar3").classList.toggle("hamburger-animation3");
+  
+      //   tabsformobileclass.forEach((item) =>
+      //   item.classList.toggle('showmobiletabs'));
+      
+    }
+  
   
 
 

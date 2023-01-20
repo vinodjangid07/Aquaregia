@@ -531,9 +531,6 @@ footer{
   
   }
  .tabs_button{
-  display: none;
- }
- .tabs_button2{
   z-index: 999;
   height: 100%;
   width: 100%;
@@ -552,20 +549,10 @@ footer{
   cursor: pointer;
   transform: translateX(1000px);
   transition-duration: 1s;
-  /* animation: dropdownlist .3s linear; */
-  
  }
- @keyframes dropdownlist {
-  0% {
-      height: 0;
-  }
-  
-}
  .show{
-  /* display: block; */
   transform: translateX(0px);
   transition-duration: .5s;
-
  }
 
  .tabsbuttonclass{
@@ -578,26 +565,14 @@ footer{
   justify-content: center;
   margin-top: 30px;
   color: white;
-  /* animation: tabsdelay .2s ease; */
-  /* display: none; */
  }
- @keyframes tabsdelay{
-  0%{
-  margin: -500px;
-  /* display: none; */
- }
-}
+ 
  .showmobiletabs{
   display: flex;
  }
- .loginbtndiv{
+
+ .loginbtn{
   margin-top: 30px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
- .loginbtnformobilenav{
   font-size: 2rem;
   border: 2px solid white;
   border-radius: 20px;

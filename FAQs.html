@@ -25,12 +25,12 @@
         <nav id=navBar>
             <div class="logo">LOGO</div>
             <div class="tabs">
-                <ul class="tabs_button">
-                    <a href="index.html"><li id="home">Home</li></a>
-                    <a href="events.html"><li id="events">Events</li></a>
-                    <a href="Sponsors/sponsors.html"><li id="sponsors">Sponsors</li></a>
-                    <a href="Team/team.html"><li id="team">Team</li></a>
-                    <a href="FAQs.html"><li id="faqs">FAQs</li></a>
+                <ul class="tabs_button" id="tabs_button">
+                    <a href="index.html"><li class="tabsbuttonclass" id="home">Home</li></a>
+                    <a href="events.html"><li class="tabsbuttonclass" id="events">Events</li></a>
+                    <a href="Sponsors/sponsors.html"><li class="tabsbuttonclass" id="sponsors">Sponsors</li></a>
+                    <a href="Team/team.html"><li class="tabsbuttonclass" id="team">Team</li></a>
+                    <a href="FAQs.html"><li class="tabsbuttonclass" id="faqs">FAQs</li></a>
                     <a href="login.html"><button class="loginbtn">Login</button></a>
 
                 </ul>
@@ -47,22 +47,6 @@
 
             </div>
         </nav><!-- navbar section ends here -->
-        <!-- mobile  toggle menu -->
-        <div>
-            <ul class="tabs_button2" id="tabs_button2">
-                <a href="index.html"><li class="tabsbuttonclass" id="homeformobilenav">Home</li></a>
-                <a href="events.html"><li class="tabsbuttonclass" id="eventsformobilenav">Events</li></a>
-                <a href="Sponsors/sponsors.html"><li class="tabsbuttonclass" id="sponsorsformobilenav">Sponsors</li></a>
-                <a href="Team/team.html"><li class="tabsbuttonclass" id="teamformobilenav">Team</li></a>
-                <a href="FAQs.html"><li class="tabsbuttonclass" id="faqsformobilenav">FAQs</li></a>
-
-                <div class="loginbtndiv">
-                    <a href="login.html"><button class="loginbtnformobilenav">Login</button></a>
-                </div>
-
-            </ul>
-        </div>
-        <!-- mobile  toggle menu ends here-->
     </header> <!-- header ends here -->
     <main>
         <div class="heading"><h1>FAQs</h1></div>
@@ -219,18 +203,18 @@
 </body>
 <script>
     // code for hamburger mobile
-    let tabsformobileclass = document.querySelectorAll('.tabsbuttonclass')
+    // let tabsformobileclass = document.querySelectorAll('.tabsbuttonclass')
 function hamburgerMenu() {
-    document.getElementById("tabs_button2").classList.toggle("show");
-    document.getElementById("navBar").classList.toggle("navbarToggleClass");
+    document.getElementById("tabs_button").classList.toggle("show");
+    // document.getElementById("navBar").classList.toggle("navbarToggleClass");
     // document.getElementById("rotatebtn").classList.toggle("rotate")
-    document.body.classList.toggle("stopscrolling")
+    document.body.classList.toggle("stopscrolling");
     document.getElementById("burger-bar1").classList.toggle("hamburger-animation1");
     document.getElementById("burger-bar2").classList.toggle("hamburger-animation2");
     document.getElementById("burger-bar3").classList.toggle("hamburger-animation3");
 
-      tabsformobileclass.forEach((item) =>
-      item.classList.toggle('showmobiletabs'));
+    //   tabsformobileclass.forEach((item) =>
+    //   item.classList.toggle('showmobiletabs'));
     
   }
 
