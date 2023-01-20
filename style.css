@@ -130,6 +130,9 @@ body {
     font-weight: 600;
     mix-blend-mode: difference;
 }
+#bookSlotBtn a{
+    text-decoration: none;
+}
 
 #bookSlotBtn:hover {
     background-color: white;
