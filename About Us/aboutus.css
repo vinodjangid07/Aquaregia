@@ -29,6 +29,7 @@ body{
     background-color: white;
     background-image: url(Stars-background-dark.svg);
     background-size: cover;
+    overflow-x: hidden;
 }
 .main-container{
     width: 100%;
@@ -238,7 +239,7 @@ article{
 /* responsive code below*/
 @media screen and (max-width:1920px) {
     html {
-        /* font-size: 60%; */
+        font-size: 60%;
     }
 }
 

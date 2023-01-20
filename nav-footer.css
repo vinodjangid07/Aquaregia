@@ -531,6 +531,7 @@ footer{
   
   }
  .tabs_button{
+   transform: translateX(1000px);
   z-index: 999;
   height: 100%;
   width: 100%;
@@ -547,12 +548,20 @@ footer{
   list-style: none;
   font-size: 2rem;
   cursor: pointer;
-  transform: translateX(1000px);
   transition-duration: 1s;
  }
+
+ @keyframes dropdownlist {
+  0% {
+      height: 0;
+  }
+  
+}
  .show{
+  /* display: block; */
   transform: translateX(0px);
   transition-duration: .5s;
+
  }
 
  .tabsbuttonclass{
@@ -565,8 +574,15 @@ footer{
   justify-content: center;
   margin-top: 30px;
   color: white;
+  animation: tabsdelay .2s ease;
+  /* display: none; */
  }
- 
+ @keyframes tabsdelay{
+  0%{
+  margin: -500px;
+  /* display: none; */
+ }
+}
  .showmobiletabs{
   display: flex;
  }

@@ -457,7 +457,7 @@ p {
   text-align: justify;
   margin-top: 1.5vh;
   margin-left: 2vw;
-  margin-right: 2vw;
+  /* margin-right: 2vw; */
   font-weight: 600;
 }
 li {
