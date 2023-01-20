@@ -75,12 +75,12 @@ function scrollFunction(){
       mybutton.style.display = "none";
      
       }
-      document.getElementById('aquaregiaTitleContainer').style.transform = 
-      translateX('-500px');
+      
 }
 
 function scrolltoTopfunction(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+
 }
 

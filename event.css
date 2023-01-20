@@ -36,6 +36,7 @@ body {
 main {
   display: flex;
   flex-direction: row;
+  height: 110vh;
 }
 #bigFlex1 {
   padding: 5vh 0 0 5vw;
@@ -65,24 +66,28 @@ main {
 .fancy {
   background-color: white;
   border: 2px solid #000;
-  border-radius: 0;
-  box-sizing: border-box;
+  border-radius: 0px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  letter-spacing: 2px;
   margin-top: 100px;
   outline: none;
   overflow: visible;
-  padding: 1.25em 3em;
+  /* padding: 1.25em 3em; */
   position: relative;
   text-align: center;
   text-decoration: none;
   text-transform: none;
   transition: all 0.3s ease-in-out;
   user-select: none;
-  font-size: 13px;
+  height: 50px;
+  width: 150px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
  }
  
  .fancy::before {
@@ -113,7 +118,7 @@ main {
  .fancy .top-key {
   height: 2px;
   width: 1.5625rem;
-  top: -2px;
+  top: -5px;
   left: 0.625rem;
   position: absolute;
   background: #e8e8e8;
@@ -124,7 +129,7 @@ main {
   height: 2px;
   width: 1.5625rem;
   right: 1.875rem;
-  bottom: -2px;
+  bottom: -5px;
   position: absolute;
   background: #e8e8e8;
   transition: width 0.5s ease-out, right 0.3s ease-out;
@@ -134,7 +139,7 @@ main {
   height: 2px;
   width: 0.625rem;
   right: 0.625rem;
-  bottom: -2px;
+  bottom: -5px;
   position: absolute;
   background: #e8e8e8;
   transition: width 0.5s ease-out, right 0.3s ease-out;
@@ -177,7 +182,7 @@ main {
   flex-direction: row;
   /* justify-content: center; */
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: -2vw;
 }
 #rulesHeader {

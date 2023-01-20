@@ -27,8 +27,8 @@ function rulesAppear(e){
     // rulesContent.style.height='fit-content';
     rulesContent.style.transform = 'scaleY(1)';
     rulesContent.style.transformOrigin = "top";
+    document.getElementById('coordinatorsss').scrollIntoView();
     rulesContent.style.opacity = '1';
-    rulesContent.scrollIntoView();
     arrow2.style.transitionDuration = '.5s';
     rulesContent.style.transitionDuration = '.5s';
         
