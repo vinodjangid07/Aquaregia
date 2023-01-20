@@ -173,13 +173,8 @@ main {
   align-items: center;
   width: 250px;
   height: 350px;
-  /* background: linear-gradient(
-    rgba(236, 236, 236, 0.112),
-    rgba(203, 203, 203, 0.015)
-  ); */
   background-color: rgba(0, 0, 0, 0.176);
   backdrop-filter: blur(10px);
-  /* padding: 20px 0px; */
   transform-style: preserve-3d;
   border-radius: 10px;
   gap: 20px;
@@ -404,7 +399,7 @@ main {
     overflow: scroll;
   }
   .category-heading {
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 80px 0px 50px 0px;
   }
   .name{

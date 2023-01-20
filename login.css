@@ -334,10 +334,15 @@ display: none;
     #login-btn{
         width: 80%;
         height: 50px;
+        font-size: 2.5rem;
     }
     .login-heading-opacity-function{
         opacity: 0;
         transition-duration:1s;
+    }
+    .registeration-link-div p{
+        font-size: 2rem;
+        color: white;
     }
     
 }

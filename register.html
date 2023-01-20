@@ -85,7 +85,7 @@
                         </div>
                          <article id="passwordmatchArticle">*Password didn't match</article>
                         <div class="btn">
-                            <button type="submit">Register </button><br>
+                            <button type="submit" id="submitbutton">Register </button><br>
                         </div>
                     </div>
                     
@@ -144,10 +144,12 @@ let PasswordInput = document.getElementById("password");
             
             
             alertMsg.style.display = "none";
+            document.getElementById('submitbutton').disabled = false;
         }
         else{
             alertMsg.style.color = "red";
             alertMsg.style.display = "block"
+            document.getElementById('submitbutton').disabled = true;
         }
     }
     PasswordInput.onkeyup = function didnotmatchMsgSecond(){
@@ -155,10 +157,12 @@ let PasswordInput = document.getElementById("password");
             
             
             alertMsg.style.display = "none";
+            document.getElementById('submitbutton').disabled = false;
         }
         else{
             alertMsg.style.color = "red";
             alertMsg.style.display = "block"
+            document.getElementById('submitbutton').disabled = true;
         }
     }
 
