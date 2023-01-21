@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(14 20 22);
   background-image: url(teamswallpaper.jpg);
   background-size: cover;
   background-position: center;
@@ -111,6 +111,9 @@ main {
   width: 100%;
   border-radius: 5px;
 }
+.need-padding{
+  padding-bottom: 15px;
+}
 .info {
   display: flex;
   flex-direction: column;
@@ -121,6 +124,10 @@ main {
   gap: 10px;
   transform: translateZ(0px);
 
+}
+.need-padding{
+  gap: 5px;
+  padding: 10px;
 }
 .profile-card:hover .info {
   transform: translateZ(50px);

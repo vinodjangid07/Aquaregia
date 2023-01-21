@@ -28,7 +28,7 @@ html {
 body{
     background-color: white;
     background-image: url(Stars-background-dark.svg);
-    background-size: cover;
+    background-size: 60%;
     overflow-x: hidden;
 }
 .main-container{
