@@ -55,6 +55,21 @@
                         </div>
                         <div class="bchaFlex">
 
+                            <label for="college">Course </label>
+                            <input class="inputCont" type="text" name="college" id="college"  required="required"/>
+                        </div>
+                        <div class="bchaFlex">
+
+                            <label for="college">Year </label>
+                            <input class="inputCont" type="text" name="college" id="college"  required="required" />
+                        </div>
+                        <div class="imageInputFlex">
+
+                            <div id="imageDisplay"><p>Upload ID Card</p></div>
+                                <input type="file" id="inputID_CardButton" accept="image/png, image/jpg, image/jpeg">
+                        </div>
+                        <div class="bchaFlex">
+
                             <label for="address">Address </label>
                             <input class="inputCont" type="text" name="address" id="address"  required="required"/>
                         </div>
@@ -66,7 +81,7 @@
                         <div class="bchaFlex">
 
                             <label for="phone">Mobile No. </label>
-                            <input class="inputCont" type="number" name="phone" id="phone"   required="required"/>
+                            <input class="inputCont" type="number" name="phone" id="phone"  maxlength="10" required="required" />
                         </div>
                         <div class="bchaFlex">
 
@@ -97,6 +112,20 @@
     </main>
 </body>
 <script>
+
+    // for inputing and displaying images
+    const inputID_CardButton= document.getElementById("inputID_CardButton");
+var uploaded_image="";
+
+inputID_CardButton.addEventListener("change", function(){
+    const reader=new FileReader();
+    reader.addEventListener("load", () => {
+        uploaded_image=reader.result;
+        document.getElementById("imageDisplay").style.backgroundImage="url("+uploaded_image+")";
+    });
+    reader.readAsDataURL(this.files[0]);
+});
+// ends here***********************************
     const Rinput = document.querySelectorAll('.bchaFlex .inputCont');
 
    Rinput.forEach((thisInput) =>{

@@ -33,6 +33,21 @@ html {
     Helvetica, Arial, sans-serif;
   cursor: default;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2e2e2e; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0); 
+  border-radius: 20px;
+}
 
 body {
   background-color: rgb(14 20 22);

@@ -149,6 +149,35 @@ p{
     margin: 35px 0;
 
 }
+#imageDisplay{
+    height: 250px;
+    width: 200px;
+    border: 1px solid white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input::file-selector-button {
+    font-weight: bold;
+    color: white;
+    padding: .8rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0px;
+    margin-top: 1rem;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+input::file-selector-button:hover{
+    background-color: white;
+    color: black;
+    transition-duration: .2s;
+}
+
 label{
     position: absolute;
     height: 55px;
