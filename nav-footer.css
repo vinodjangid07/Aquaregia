@@ -329,7 +329,7 @@ footer{
   flex-direction: column;
   align-items:flex-end;
   justify-content: flex-start;
-  /* background-color: rgb(90, 8, 8); */
+
 }
 .contact-us{
   text-align: end;
@@ -394,6 +394,9 @@ footer{
 .fa-facebook:hover{
   color: #3b5998;
   transition-duration: .3s;
+}
+.socialsformobile{
+  display: none;
 }
 .footer-bottom{
   width: 100%;
@@ -615,6 +618,7 @@ footer{
   .aquaregia-details-container{
       width: 100%;
       height: fit-content;
+      order: 2;
   }
   .aquaregia-title-div{
    
@@ -652,6 +656,7 @@ footer{
       /* padding: 20px 0px; */
       align-items: flex-start;
       justify-content: flex-start;
+      order: 3;
      
   }
   .footer-tabs-container ul{
@@ -688,7 +693,8 @@ footer{
 
     
   }
-  .coordinators-main-container{
+ 
+  .socialsformobile{
       width: 100%;
       height: fit-content;
       /* padding: 20px 0; */
@@ -698,7 +704,14 @@ footer{
       text-align: center;
       gap: 35px;
       margin-bottom: 20px;
+      display: none;
   }
+  .coordinators-main-container {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* background-color: rgb(90, 8, 8); */
+}
   .coordinators-name{
       width: 100%;
       text-align: left;
@@ -720,6 +733,7 @@ footer{
       align-items: flex-start;
       justify-content:flex-start;
       gap:15px;
+      order: 4;
   }
   .social-media-icon-div{
       gap: 20px;
@@ -732,6 +746,9 @@ footer{
   .social-media-logo i{
       font-size:3rem;
       width: fit-content;
+  }
+  .socialsforpc{
+    display: none;
   }
 }
 
