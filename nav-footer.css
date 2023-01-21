@@ -27,7 +27,16 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
+::-webkit-scrollbar{
+  width: 7px;
+}
+::-webkit-scrollbar-track{
+  background: #2e2e2e;
+}
+::-webkit-scrollbar-thumb{
+  background-color: black;
+  border-radius: 20px;
+}
 :root {
   font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif;
