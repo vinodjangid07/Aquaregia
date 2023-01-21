@@ -135,6 +135,7 @@ footer{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  mix-blend-mode: difference;
 }
 .footer-container{
   margin-top: 200px;
@@ -613,7 +614,7 @@ footer{
       flex-direction: column;
       height: fit-content;
       padding-bottom: 0;
-      gap: 35px;
+      gap: 25px;
   }
   .aquaregia-details-container{
       width: 100%;
@@ -703,20 +704,20 @@ footer{
       justify-content: flex-start;
       text-align: center;
       gap: 35px;
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
       display: none;
   }
   .coordinators-main-container {
     width: 100%;
     align-items: flex-start;
     justify-content: flex-start;
+    /* margin-bottom: 35px; */
     /* background-color: rgb(90, 8, 8); */
 }
   .coordinators-name{
       width: 100%;
       text-align: left;
       font-weight: 400;
-
   }
   .footer-bottom{
       width: 100%;
