@@ -292,7 +292,9 @@ display: flex;
   background-image: url(pF.jpg);
   background-size: 100%;
   }
-  
+  footer{
+    mix-blend-mode: difference;
+  }
 /* responsive code below*/
 @media screen and (max-width:1920px) {
   html {
