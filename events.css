@@ -293,7 +293,8 @@ display: flex;
   background-size: 100%;
   }
   footer{
-    mix-blend-mode: difference;
+    background-color: rgba(0, 0, 0, 0.389);
+    /* mix-blend-mode: difference; */
   }
 /* responsive code below*/
 @media screen and (max-width:1920px) {
