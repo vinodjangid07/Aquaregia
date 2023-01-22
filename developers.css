@@ -308,25 +308,7 @@ body{
     display: flex;
     align-items: center;
    }
-    .name{
-        font-size: 2.3rem;
-    }
-    .post{
-        font-size: 1.7rem;
-    }
-    .intro p{
-        font-size: 2.5rem;
-    }
-    .intro{
-        font-size: 2rem;
-        font-weight: 500;
-    }
-    .phone,.mail{
-        font-size: 1.8rem;
-    }
-    .phone i,.mail i{
-        font-size: 2.3rem;
-    }
+    
 
 }
 
