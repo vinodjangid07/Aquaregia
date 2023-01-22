@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*::selection {
+    background-color: transparent;
+}
+
+*::-moz-selection {
+    background: transparent;
+}
+ 
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+:root{
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    cursor:default;
+}
+body{
+    background-color: rgb(245, 237, 235);
+}
+.heading-div{
+    margin: 50px 0px 50px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.heading-div article{
+    font-size: 6rem;
+}
+.developers-div{
+    width: 80%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    margin-bottom: 50px;
+    z-index: -1;
+    flex-wrap: wrap;
+}
+.wholecard{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+}
+.profile-card{
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    box-shadow:0px 5px 10px rgba(128, 128, 128, 0.289);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+}
+.profile-card img{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+.name{
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.post{
+    color: rgb(172, 116, 255);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.socialoncard{
+    text-decoration: none;
+    font-size: 3rem;
+    color: black;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.406);
+    transition-duration: .3s;
+}
+.socialoncard:hover{
+    background-color: black;
+    color: white;
+    transition-duration: .3s;
+}
+.more{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(53, 53, 53);
+    padding: 5px 10px;
+}
+.backside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    box-shadow:0px 5px 10px rgba(128, 128, 128, 0.289);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transform-origin: left;
+    opacity: 1;
+    transition-duration: .5s;
+    padding: 40px;
+    gap: 20px;
+    z-index: 1;
+
+}
+
+.active{
+    transform: translateX(100%);
+    opacity: 1;
+    transition-duration: .5s;
+}
+.intro{
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+.intro p{
+    font-size: 1.7rem;
+    color: rgb(172, 116, 255);
+}
+.intro a {
+    color: rgb(3, 128, 177);
+    cursor: pointer;
+}
+.phone{
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+.mail{
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;  
+    display: flex;
+    word-break:break-all;
+}
+.phone i,.mail i{
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(172, 116, 255);
+}
+.socialsforbackside{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.social i{
+    font-size: 3rem;
+    color: rgb(25, 25, 25);
+    font-weight: 900;
+}
+.social i:hover{
+    color: rgb(172, 116, 255);
+}
+
+/* responsive code below*/
+@media screen and (max-width:1920px) {
+    html {
+        font-size: 60%;
+    }
+}
+@media screen and (max-width:1500px) {
+    html {
+        font-size: 60%;
+    }
+    .wholecard{
+        display: flex;
+        flex-direction: column;
+    }
+    .backside{
+       transform: none;
+       position: unset;
+       height: 0;
+       opacity: 0;
+
+    }
+    .active{
+        height: 420px;
+        opacity: 1;
+        transition-duration: .5s;
+    }
+    .developers-div{
+        align-items: flex-start;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 60%;
+    }
+    
+}
+
+@media screen and (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+   
+}
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 50%;  
+    }
+    .heading-div article{
+        font-size: 4.5rem;
+    }
+    .developers-div{
+        gap: 10px;
+    }
+   .wholecard{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+   }
+    
+}
+
+@media screen and (max-width:430px) {
+    html {
+        font-size: 48%;
+    }
+   
+    .heading-div article{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:385px) {
+    html {
+        font-size: 46%;
+    }
+    .developers-div{
+        padding: 0;
+    }
+    .profile-card{
+        width: 100%;
+        height: fit-content;
+        gap: 15px;
+    }
+    .backside{
+        width: 100%;
+    }
+}
+@media screen and (max-width:300px) {
+    html {
+        font-size: 43%;
+    }
+}
+
+/* responsive code above */
+
