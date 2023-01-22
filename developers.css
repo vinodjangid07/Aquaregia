@@ -34,7 +34,36 @@ html {
 }
 body{
     background-color: rgb(245, 237, 235);
+    overflow-x: hidden;
 }
+
+
+.back-to-home-div{
+    
+    position: absolute;
+    top: 0px;
+    left:5px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 10vh;
+    display: none;
+  }
+  #arrow-left{
+    background-color: black;
+    background-image: url(arrow-left.png);
+    border-radius: 50%;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    text-decoration: none;
+    cursor: pointer;
+    filter: invert(1);
+  }
 .heading-div{
     margin: 50px 0px 50px 0px;
     width: 100%;
@@ -133,7 +162,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     transform-origin: left;
-    opacity: 1;
+    opacity: 0;
     transition-duration: .5s;
     padding: 40px;
     gap: 20px;
@@ -279,7 +308,26 @@ body{
     display: flex;
     align-items: center;
    }
-    
+    .name{
+        font-size: 2.3rem;
+    }
+    .post{
+        font-size: 1.7rem;
+    }
+    .intro p{
+        font-size: 2.5rem;
+    }
+    .intro{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .phone,.mail{
+        font-size: 1.8rem;
+    }
+    .phone i,.mail i{
+        font-size: 2.3rem;
+    }
+
 }
 
 @media screen and (max-width:430px) {
