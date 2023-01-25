@@ -72,11 +72,25 @@ main {
 }
 
 .logo {
-  font-size: 5rem;
-  font-weight: 600;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #logo1 {
   display: none;
+}
+#logo2{
+  padding-right: 80px;
+}
+#logo2 img{
+  width: 100%;
+  /* background-color: green; */
+}
+#logo1 img{
+  width: 100%;
+  /* background-color: green; */
 }
 
 #heading {
@@ -561,6 +575,10 @@ li {
   #alignment{
     margin-top: 50px;
   }
+  #logo1{
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -572,6 +590,10 @@ li {
 @media screen and (max-width: 500px) {
   html {
     font-size: 45%;
+  }
+  #logo1{
+    margin-top: 80px;
+    margin-bottom: 60px;
   }
   .fancy{
     margin-top: 50px;
