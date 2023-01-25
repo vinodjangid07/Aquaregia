@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="resetforgot.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+<body>
+    <form action="/resetpass" method="post">
+        <article>Reset Password</article>
+    <input type="email" name="email" id="email" placeholder="Email"> <br>
+    <input type="text" name="cpass" id="cpass" placeholder="Current Password"> <br>
+    <input type="password" name="npass" id="npass" placeholder="New Password"> <br>
+    <div class="eyetoggleinput">
+    <input type="password" name="conpass" id="conpass" placeholder=" Confirm Password">
+    <div id="eyetoggle">
+        <i class="fas fa-eye" id="show"></i>
+        <i class="fas fa-eye-slash" id="hide"></i>
+    </div>
+</div><br>
+    <button type="submit" id="submitbutton">Reset Password</button>
+    </form>
+</body>
+<script>
+    
+//    for eye toggle button
+// let alertMsg = document.getElementById('passwordmatchArticle');
+let PasswordInput = document.getElementById("npass");
+let PasswordInput2 = document.getElementById("conpass");
+   let eyeBtn = document.getElementById("eyetoggle");
+    let hide = document.getElementById("hide");
+    let show = document.getElementById("show");
+    
+     eyeBtn.addEventListener('click',passwordSee);
+     function passwordSee(g){
+        if (PasswordInput2.type === "password"){
+        PasswordInput2.type = "text";
+        show.style.display = "block";
+        hide.style.display = "none";
+
+    }
+    else{
+        PasswordInput2.type = "password";
+        show.style.display = "none";
+        hide.style.display = "block";
+
+    }
+    }
+
+// disable submit button when password not match
+    
+    PasswordInput2.onkeyup = function didnotmatchMsg(){
+        if(PasswordInput.value == PasswordInput2.value){
+            
+            
+            // alertMsg.style.display = "none";
+            document.getElementById('submitbutton').disabled = false;
+        }
+        else{
+            // alertMsg.style.color = "red";
+            // alertMsg.style.display = "block"
+            document.getElementById('submitbutton').disabled = true;
+        }
+    }
+    PasswordInput.onkeyup = function didnotmatchMsgSecond(){
+        if(PasswordInput.value == PasswordInput2.value){
+            
+            
+            // alertMsg.style.display = "none";
+            document.getElementById('submitbutton').disabled = false;
+        }
+        else{
+            // alertMsg.style.color = "red";
+            // alertMsg.style.display = "block"
+            document.getElementById('submitbutton').disabled = true;
+        }
+    }
+
+</script>
+</html>

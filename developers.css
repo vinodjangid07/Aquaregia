@@ -33,62 +33,221 @@ html {
     cursor:default;
     --color-white: #fff;
     --color-black: #000;
-    --color-dark-mode:#0a0a10;
+    --color-dark-mode:#090909;
     --color-light-mode:#ece7e1;
     --color-ddd-color: #ddd;
     --color-gray: #c4c4c4;
     --color-purple: #8000ff;
     --color-light-purple: rgb(172, 116, 255);
     --color-light-blue: #6bc5f8;
+    --color-profilecardlight-shadow:rgba(128, 128, 128, 0.289);
+    --color-profilecarddark-shadow:rgba(0, 0, 0, 0.289);
+    --color-socialsonback:rgb(179, 179, 179);
 
 }
 body{
-    background-color: var(--color-light-mode);
+    background-color: var(--color-dark-mode);
     overflow-x: hidden;
+    transition-duration: .5s;
 }
 /* for light mode */
-.dark-mode{
-    --color-light-mode:#090909;
+.light-mode{
+    --color-dark-mode:#ece7e1;
     --color-black: #fff;
     --color-white: #000;
     --color-ddd-color: rgb(31, 31, 31);
+    --color-profilecardlight-shadow:rgba(128, 128, 128, 0.289);
+    --color-socialsonback:rgb(25, 25, 25);
 }
 
-.visualmodetogglebuttoncontainer{
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-}
-
-
-
-#labelforvisualmode {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background-image: url(src/png/crescent-moon\ \(1\).png);
-    background-size:50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition-duration: .5s;
-}
-
-#switchforvisualmode{
-    /* display: none; */
+.toggleWrapper {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* overflow: hidden; */
+    color: white;
+  }
+  
+  .toggleWrapper input {
+    position: absolute;
+    left: -99em;
+    display: none;
+  }
+  
+  .toggle {
     cursor: pointer;
-}
-#switchforvisualmode:checked+#labelforvisualmode { 
-    transform: rotate(360deg);
-    transition-duration: .5s;
-    background-image: url(src/png/sun.png);
-    background-size:60%;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #83d8ff;
+    border-radius: 84px;
+    transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
 
-}
+  
+  .toggle__handler {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffcf96;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: rotate(-45deg);
+  }
+  
+  .toggle__handler .crater {
+    position: absolute;
+    background-color: #e8cda5;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    border-radius: 100%;
+  }
+  
+  .toggle__handler .crater--1 {
+    top: 10px;
+    left: 4px;
+    width: 2px;
+    height: 1px;
+  }
+  
+  .toggle__handler .crater--2 {
+    top: 18px;
+    left: 12px;
+    width: 3px;
+    height: 3px;
+  }
+  
+  .toggle__handler .crater--3 {
+    top: 5px;
+    left: 12px;
+    width: 4px;
+    height: 4px;
+  }
+  
+  .star {
+    position: absolute;
+    background-color: #fff;
+    transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    border-radius: 50%;
+  }
+  
+  .star--1 {
+    top: 5px;
+    left: 15px;
+    z-index: 0;
+    width: 12px;
+    height: 1px;
+  }
+  
+  .star--2 {
+    top: 9px;
+    left: 14px;
+    z-index: 1;
+    width: 15px;
+    height: 1px;
+  }
+  
+  .star--3 {
+    top: 24px;
+    left: 22px;
+    z-index: 0;
+    width: 15px;
+    height: 1px;
+  }
+  
+  .star--4, .star--5, .star--6 {
+    opacity: 0;
+    transition: all 300ms 0 cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  .star--4 {
+    top: 12px;
+    left: 15px;
+    z-index: 0;
+    width: 1px;
+    height: 1px;
+    transform: translate3d(3px, 0, 0);
+  }
+  
+  .star--5 {
+    top: 25px;
+    left: 20px;
+    z-index: 0;
+    width: 3px;
+    height: 3px;
+    transform: translate3d(3px, 0, 0);
+  }
+  
+  .star--6 {
+    top: 16px;
+    left: 28px;
+    z-index: 0;
+    width: 2px;
+    height: 2px;
+    transform: translate3d(3px, 0, 0);
+  }
+  
+  input:checked + .toggle {
+    background-color: rgb(27, 27, 27);
+  }
+  
+  input:checked + .toggle:before {
+    color: rgb(27, 27, 27);
+  }
+  
+  input:checked + .toggle:after {
+    color: #fff;
+  }
+  
+  input:checked + .toggle .toggle__handler {
+    background-color: #ffe5b5;
+    transform: translate3d(30px, 0, 0) rotate(0);
+  }
+  
+  input:checked + .toggle .toggle__handler .crater {
+    opacity: 1;
+  }
+  
+  input:checked + .toggle .star--1 {
+    width: 2px;
+    height: 2px;
+  }
+  
+  input:checked + .toggle .star--2 {
+    width: 4px;
+    height: 4px;
+    transform: translate3d(-5px, 0, 0);
+  }
+  
+  input:checked + .toggle .star--3 {
+    width: 2px;
+    height: 2px;
+    transform: translate3d(-7px, 0, 0);
+  }
+  
+  input:checked + .toggle .star--4, input:checked + .toggle .star--5, input:checked + .toggle .star--6 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  input:checked + .toggle .star--4 {
+    transition: all 300ms 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  input:checked + .toggle .star--5 {
+    transition: all 300ms 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  input:checked + .toggle .star--6 {
+    transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+   
 
 .back-to-home-div{
     
@@ -104,7 +263,7 @@ body{
     display: none;
   }
   #arrow-left{
-    background-color:var(--color-black);
+    background-color:var(--color-white);
     background-image: url(arrow-left.png);
     border-radius: 50%;
     background-size: 70%;
@@ -117,7 +276,7 @@ body{
     filter: invert(1);
   }
 .heading-div{
-    margin: 50px 0px 50px 0px;
+    margin: 100px 0px 50px 0px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -126,6 +285,7 @@ body{
 }
 .heading-div article{
     font-size: 6rem;
+    color: var(--color-white);
 }
 .developers-div{
     width: 80%;
@@ -148,8 +308,8 @@ body{
 .profile-card{
     width: 300px;
     height: 420px;
-    background-color: var(--color-white);
-    box-shadow:0px 5px 10px rgba(128, 128, 128, 0.289);
+    background-color: var(--color-black);
+    box-shadow:0px 5px 10px var(--color-profilecarddark-shadow);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,6 +317,7 @@ body{
     padding: 30px;
     position: relative;
     z-index: 2;
+    transition-duration: .5s;
 }
 .profile-card img{
     width: 100%;
@@ -164,7 +325,7 @@ body{
     
 }
 .name{
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
@@ -177,19 +338,19 @@ body{
 .socialoncard{
     text-decoration: none;
     font-size: 3rem;
-    color: var(--color-black);
+    color: var(--color-white);
     height: 50px;
     width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.406);
+    box-shadow: 0px 5px 10px var(--color-profilecarddark-shadow);
     transition-duration: .3s;
 }
 .socialoncard:hover{
-    background-color: var(--color-black);
-    color: white;
+    background-color: var(--color-white);
+    color: var(--color-black);
     transition-duration: .3s;
 }
 .more{
@@ -207,8 +368,8 @@ body{
     top: 0;
     width: 300px;
     height: 420px;
-    background-color: var(--color-white);
-    box-shadow:0px 5px 10px rgba(128, 128, 128, 0.289);
+    background-color: var(--color-black);
+    box-shadow:0px 5px 10px var(--color-profilecarddark-shadow);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,7 +391,7 @@ body{
 .intro{
     font-size: 1.5rem;
     font-weight: 500;
-    color: var(--color-black);
+    color: var(--color-white);
 
 }
 .intro p{
@@ -243,7 +404,7 @@ body{
 }
 .phone{
     width: 100%;
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: 500;
@@ -254,7 +415,7 @@ body{
 }
 .mail{
     width: 100%;
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: 500;  
@@ -279,7 +440,7 @@ body{
 }
 .social i{
     font-size: 3rem;
-    color: rgb(25, 25, 25);
+    color: var(--color-socialsonback);
     font-weight: 900;
 }
 .social i:hover{

@@ -22,11 +22,22 @@
     <header></header> <!-- not using yet -->
     
     <main>
-        <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
-            <input type="checkbox" id="switchforvisualmode"
-            onclick="visualmode()">
-            <label for="switchforvisualmode" id="labelforvisualmode"></label>
-          </div>
+        <div class="toggleWrapper">
+            <input type="checkbox" class="dn" id="dn" onclick="visualmode()" checked>
+            <label for="dn" class="toggle">
+                <span class="toggle__handler">
+                    <span class="crater crater--1"></span>
+                    <span class="crater crater--2"></span>
+                    <span class="crater crater--3"></span>
+                </span>
+                <span class="star star--1"></span>
+                <span class="star star--2"></span>
+                <span class="star star--3"></span>
+                <span class="star star--4"></span>
+                <span class="star star--5"></span>
+                <span class="star star--6"></span>
+            </label>
+        </div>
 
 
 
@@ -155,7 +166,7 @@ function activeTab(){
 
 // dark mode
 function visualmode(){
-    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('light-mode');
     }
 </script>
 </html>

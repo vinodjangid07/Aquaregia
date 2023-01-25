@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: gray;
+}
+
+*::-moz-selection {
+    background: gray;
+}
+ 
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+:root{
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    cursor:default;
+}
+body{
+    background-color: black;
+
+}
+form{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+article{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    padding: 50px 0px;
+}
+input{
+background-color: transparent;
+border: none;
+border: 1px solid white;
+color: white;
+height: 40px;
+width: 60%;
+font-size: 1.9rem;
+padding-left: 15px;
+margin-bottom: 30px;
+outline: none;
+}
+.eyetoggleinput{
+    width: 60%;
+    height: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+#conpass{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 0;
+}
+
+
+#eyetoggle{
+    position: absolute;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    top: 0;
+    right: 25px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+}
+#hide{
+display: block;
+}
+#show{
+display: none;
+}
+#show::selection,#hide::selection {
+    background-color: transparent;
+}
+
+#show::-moz-selection,#hide::-moz-selection {
+    background: transparent;
+}
+button{
+    width: 60%;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 0;
+    height: 40px;
+    font-size: 2rem;
+    transition-duration: .3s;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition-duration: .3s;
+}
+
+#submitbutton:disabled:hover,
+#submitbutton[disabled]:hover{
+    border: none;
+  background-color: rgb(161, 24, 24);
+  color: white;
+  box-shadow: 0px 0px 10px rgb(186, 0, 0);
+  -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+ @-webkit-keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  @keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  
+
+
+
+/* responsive code below*/
+@media screen and (max-width:1920px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+    form{
+        width: 100%;
+    }
+    input{
+        width: 60%;
+    }
+ 
+}
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 45%;  
+    }
+    input{
+        width: 70%;
+    }
+    button{
+        width: 70%;
+    }
+    .eyetoggleinput{
+        width: 70%;
+        height: 40px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    #conpass{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 0;
+    }
+    #eyetoggle{
+        font-size: 2rem;
+    }
+    
+
+}
+
+@media screen and (max-width:430px) {
+    html {
+        font-size: 43%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    html {
+        font-size: 40%;
+    }
+}
+@media screen and (max-width:300px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+/* responsive code above */
+
