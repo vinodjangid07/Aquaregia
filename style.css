@@ -55,7 +55,8 @@ body {
     background-color: white;
     color: black;
     border-radius: 20px;
-  }
+}
+
  #preloader {
     background-color: black;
     height: 100%;
@@ -99,9 +100,11 @@ body {
     font-size: 10rem;
     color: white;
     font-weight: 800;
-    mix-blend-mode: difference;
+    mix-blend-mode: exclusion;
+
     
 }
+
 
 #toInfinity {
     font-size: 3rem;
@@ -340,9 +343,12 @@ body {
     justify-content: center;
     color: white;
     background-color: transparent;
-    border: 2px solid rgb(57, 57, 57);
+    /* border: 2px solid rgb(57, 57, 57); */
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+.two-Lines-Sub-Div-Logo img{
+    width: 100%;
 }
 .two-Lines-Sub-Div-Description-main-div{
     width: 60%;
@@ -636,9 +642,7 @@ body {
 
     }
     .two-Lines-Sub-Div-Logo{
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
+        border-radius: 0;
     }
     .two-Lines-Sub-Div{
         width: 350px;

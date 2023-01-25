@@ -22,6 +22,15 @@
     <header></header> <!-- not using yet -->
     
     <main>
+        <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+            <input type="checkbox" id="switchforvisualmode"
+            onclick="visualmode()">
+            <label for="switchforvisualmode" id="labelforvisualmode"></label>
+          </div>
+
+
+
+          
         <div class="back-to-home-div"><div id="arrow-left" onclick="history.back()"></div></div> 
         <div class="heading-div"><article>Developers Team</article></div>
         <div class="developers-div">
@@ -128,8 +137,10 @@
     <footer></footer> <!-- not using yet -->
 </body>
 <script>
-const profileCard= document.querySelectorAll('.profile-card');
-const div = document.querySelectorAll('.wholecard')
+
+    // for card opening
+const profileCard = document.querySelectorAll('.profile-card');
+const div = document.querySelectorAll('.wholecard');
 
 profileCard.forEach((item) =>
 item.addEventListener('click',activeTab));
@@ -138,11 +149,13 @@ function activeTab(){
     // profileCard.forEach((item) =>
     // item.firstElementChild.classList.remove('active')
     // ); 
-
         this.nextElementSibling.classList.toggle('active');
-    // this.classList.toggle('size');
-   
 }
 
+
+// dark mode
+function visualmode(){
+    document.body.classList.toggle('dark-mode');
+    }
 </script>
 </html>
