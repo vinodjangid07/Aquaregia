@@ -254,7 +254,6 @@ body{
    
 
 .back-to-home-div{
-    
     position: absolute;
     top: 0px;
     left:5px;
@@ -266,6 +265,7 @@ body{
     height: 10vh;
     display: none;
   }
+
   #arrow-left{
     background-color:var(--color-white);
     background-image: url(arrow-left.png);
@@ -279,6 +279,7 @@ body{
     cursor: pointer;
     filter: invert(1);
   }
+
 .heading-div{
     margin: 100px 0px 50px 0px;
     width: 100%;
@@ -287,6 +288,7 @@ body{
     justify-content: center;
     font-weight: 500;
 }
+
 .heading-div article{
     font-size: 6rem;
     color: var(--color-white);
@@ -299,6 +301,7 @@ body{
     -webkit-animation: gradient 3s ease infinite;
     animation: gradient 3s ease infinite;
 }
+
 @keyframes gradient {
     0% {
         background-position: 0 50%;
@@ -311,6 +314,7 @@ body{
         background-position: 0 50%;
     }
 }
+
 .developers-div{
     width: 80%;
     margin: auto;
@@ -323,6 +327,7 @@ body{
     z-index: -1;
     flex-wrap: wrap;
 }
+
 .wholecard{
     width: fit-content;
     height: fit-content;
@@ -343,10 +348,10 @@ body{
     z-index: 3;
     transition-duration: .5s;
 }
+
 .profile-card img{
     width: 100%;
     border-radius: 50%;
-    
 }
 .name{
     color: var(--color-white);
@@ -386,6 +391,7 @@ body{
     color: rgb(53, 53, 53);
     padding: 5px 10px;
 }
+
 .backside{
     position: absolute;
     left: 0;
@@ -399,14 +405,11 @@ body{
     align-items: center;
     justify-content: flex-start;
     transform-origin: left;
-    /* opacity: 0; */
     transition-duration: .5s;
     padding: 40px;
     gap: 20px;
     z-index: 1;
-
 }
-
 .active{
     transform: translateX(100%);
     opacity: 1;
@@ -416,8 +419,8 @@ body{
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--color-white);
-
 }
+
 .intro p{
     font-size: 1.7rem;
     color: rgb(172, 116, 255);
