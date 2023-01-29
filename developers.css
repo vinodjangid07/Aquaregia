@@ -32,7 +32,7 @@ html {
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     cursor:default;
     --color-white: #fff;
-    --color-black: #000;
+    --color-black: rgb(9, 9, 9);
     --color-dark-mode:#090909;
     --color-light-mode:#ece7e1;
     --color-ddd-color: #ddd;
@@ -46,12 +46,15 @@ html {
 
 }
 body{
-    background-color: var(--color-dark-mode);
+    background-color: var(--color-white);
+    background-image: url(Stars-background-dark.svg);
+    background-size: 60%;
     overflow-x: hidden;
-    transition-duration: .5s;
 }
 /* for light mode */
 .light-mode{
+    background-color: var(--color-light-mode);
+    background-image: none;
     --color-dark-mode:#ece7e1;
     --color-black: #fff;
     --color-white: #000;
@@ -287,6 +290,26 @@ body{
 .heading-div article{
     font-size: 6rem;
     color: var(--color-white);
+    background: -webkit-linear-gradient(135deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
+    background: linear-gradient(-45deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    -webkit-animation: gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    
+    100% {
+        background-position: 0 50%;
+    }
 }
 .developers-div{
     width: 80%;
