@@ -60,6 +60,7 @@ body{
     --color-socialsonback:rgb(25, 25, 25);
 }
 
+  
 .toggleWrapper {
     position: absolute;
     top: 20px;
@@ -316,7 +317,7 @@ body{
     justify-content: space-between;
     padding: 30px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     transition-duration: .5s;
 }
 .profile-card img{
@@ -375,7 +376,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     transform-origin: left;
-    opacity: 0;
+    /* opacity: 0; */
     transition-duration: .5s;
     padding: 40px;
     gap: 20px;
@@ -462,17 +463,37 @@ body{
         flex-direction: column;
     }
     .backside{
-       transform: none;
-       position: unset;
-       height: 0;
-       opacity: 0;
-
+        left: 0;
+        top: 0; 
     }
     .active{
-        height: 420px;
+        transform: translateY(100%);
         opacity: 1;
         transition-duration: .5s;
     }
+    .wholecardvinodscale{
+        margin-bottom: 420px;
+        animation: marginbottom .3s linear;
+    }
+    .wholecardmadhuscale{
+        margin-bottom: 420px;
+        animation: marginbottom .3s linear;
+    }
+    .wholecardvikashscale{
+        margin-bottom: 420px;
+        animation: marginbottom .3s linear;
+    }
+    .wholecardkeshavscale{
+        margin-bottom: 420px;
+        animation: marginbottom .3s linear;
+    }
+    @keyframes marginbottom {
+        0%{
+            margin-bottom: 0;
+        }
+    }
+
+
     .developers-div{
         align-items: flex-start;
         /* flex-direction: column; */
@@ -491,10 +512,10 @@ body{
     html {
         font-size: 55%;
     }
-    #vinod{
+    #wholecardvinod{
         order: 2;
     }
-    #madhu{
+    #wholecardmadhu{
         order: 1;
     }
 }
@@ -516,17 +537,9 @@ body{
     .developers-div{
         gap: 10px;
     }
-   .wholecard{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-   }
-   .active{
-    height: 300px;
-   }
 
 }
+
 
 @media screen and (max-width:430px) {
     html {

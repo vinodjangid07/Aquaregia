@@ -195,7 +195,7 @@ footer{
   color: white;
   font-weight: 700;
   /* text-decoration: underline; */
-  color: rgb(217, 0, 250);
+  color: rgb(204 0 148);
 }
 .location-div{
   width: 100%;
@@ -491,7 +491,6 @@ footer{
      position: relative;
   }
   .hamburger{
-      /* display: block; */
       position: absolute;
       top: 0;
       right: 0;

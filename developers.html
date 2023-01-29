@@ -22,6 +22,7 @@
     <header></header> <!-- not using yet -->
     
     <main>
+        <div class="stars-moving-background"></div>
         <div class="toggleWrapper">
             <input type="checkbox" class="dn" id="dn" onclick="visualmode()" checked>
             <label for="dn" class="toggle">
@@ -46,8 +47,8 @@
         <div class="heading-div"><article>Developers Team</article></div>
         <div class="developers-div">
             <!-- vinod card -->
-            <div class="wholecard" id="vinod">
-            <div class="profile-card">
+            <div class="wholecard" id="wholecardvinod"  data-aos="flip-up">
+            <div class="profile-card"id="vinod">
                 <img src="developers photos/vinod.jpg" alt="">
                 <article class="name">Vinod Kumar</article>
                 <article class="post">Frontend Developer</article>
@@ -70,8 +71,8 @@
 
 
             <!-- madhavendra card -->
-            <div class="wholecard" id="madhu">
-            <div class="profile-card">
+            <div class="wholecard" id="wholecardmadhu"  data-aos="flip-up">
+            <div class="profile-card"id="madhu">
                 <img src="developers photos/madhavendra.jpg" alt="">
                 <article class="name">Madhavendra Singh</article>
                 <article class="post">Frontend Developer</article>
@@ -95,8 +96,8 @@
         <!-- backdend dev -->
         <div class="developers-div">
             <!-- vikash card -->
-            <div class="wholecard">
-            <div class="profile-card" id="vikash">
+            <div class="wholecard" id="wholecardvikash" data-aos="flip-up">
+            <div class="profile-card"id="vikash">
                 <img src="developers photos/vikash.jpg" alt="">
                 <article class="name">Vikash Jhalandhar</article>
                 <article class="post">Backend Developer</article>
@@ -120,11 +121,11 @@
 
 
 <!-- keshav card -->
-            <div class="wholecard">
-            <div class="profile-card" id="keshav">
+            <div class="wholecard" id="wholecardkeshav" data-aos="flip-up">
+            <div class="profile-card"id="keshav">
                 <img src="developers photos/keshav.jpg" alt="">
                 <article class="name">Keshav Saini</article>
-                <article class="post">Backend Developer</article>
+                <article class="post">Deployment</article>
                 <a href="" class="socialoncard"><i class="fab fa-whatsapp"></i></a>
                 <article class="more">...</article>
             </div>
@@ -150,17 +151,62 @@
 <script>
 
     // for card opening
-const profileCard = document.querySelectorAll('.profile-card');
-const div = document.querySelectorAll('.wholecard');
+// const profileCard = document.querySelectorAll('.profile-card');
+// const div = document.querySelectorAll('.wholecard');
+const vinod = document.getElementById('vinod');
+const madhu = document.getElementById('madhu');
+const vikash = document.getElementById('vikash');
+const keshav = document.getElementById('keshav');
 
-profileCard.forEach((item) =>
-item.addEventListener('click',activeTab));
+vinod.addEventListener('click',vinodcard);
 
-function activeTab(){
-    // profileCard.forEach((item) =>
-    // item.firstElementChild.classList.remove('active')
-    // ); 
-        this.nextElementSibling.classList.toggle('active');
+function vinodcard(){
+    vinod.nextElementSibling.classList.toggle('active');
+    document.getElementById('wholecardvinod').classList.toggle('wholecardvinodscale');
+    document.getElementById('wholecardmadhu').classList.remove('wholecardmadhuscale');
+    document.getElementById('wholecardvikash').classList.remove('wholecardvikashscale');
+    document.getElementById('wholecardkeshav').classList.remove('wholecardkeshavscale');
+    madhu.nextElementSibling.classList.remove('active');
+    vikash.nextElementSibling.classList.remove('active');
+    keshav.nextElementSibling.classList.remove('active');
+}
+
+madhu.addEventListener('click',madhucard);
+
+function madhucard(){
+    madhu.nextElementSibling.classList.toggle('active');
+    document.getElementById('wholecardmadhu').classList.toggle('wholecardmadhuscale');
+    document.getElementById('wholecardvinod').classList.remove('wholecardvinodscale');
+    document.getElementById('wholecardvikash').classList.remove('wholecardvikashscale');
+    document.getElementById('wholecardkeshav').classList.remove('wholecardkeshavscale');
+    vinod.nextElementSibling.classList.remove('active');
+    vikash.nextElementSibling.classList.remove('active');
+    keshav.nextElementSibling.classList.remove('active');
+}
+vikash.addEventListener('click',vikashcard);
+
+function vikashcard(){
+    vikash.nextElementSibling.classList.toggle('active');
+     document.getElementById('wholecardvikash').classList.toggle('wholecardvikashscale');
+    document.getElementById('wholecardmadhu').classList.remove('wholecardmadhuscale');
+    document.getElementById('wholecardvinod').classList.remove('wholecardvinodscale');
+    document.getElementById('wholecardkeshav').classList.remove('wholecardkeshavscale');
+    madhu.nextElementSibling.classList.remove('active');
+    vinod.nextElementSibling.classList.remove('active');
+    keshav.nextElementSibling.classList.remove('active');
+}
+
+keshav.addEventListener('click',keshavcard);
+
+function keshavcard(){
+    keshav.nextElementSibling.classList.toggle('active');
+    document.getElementById('wholecardkeshav').classList.toggle('wholecardkeshavscale');
+    document.getElementById('wholecardmadhu').classList.remove('wholecardmadhuscale');
+    document.getElementById('wholecardvikash').classList.remove('wholecardvikashscale');
+    document.getElementById('wholecardvinod').classList.remove('wholecardvinodscale');
+    madhu.nextElementSibling.classList.remove('active');
+    vikash.nextElementSibling.classList.remove('active');
+    vinod.nextElementSibling.classList.remove('active');
 }
 
 
@@ -168,5 +214,25 @@ function activeTab(){
 function visualmode(){
     document.body.classList.toggle('light-mode');
     }
+
+
+
+
+
+
+
+    
+// profileCard.forEach((item) =>
+// item.addEventListener('click',activeTab));
+
+
+// function activeTab(){
+//         this.nextElementSibling.classList.toggle('active');
+// }
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 </html>
