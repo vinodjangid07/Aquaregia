@@ -197,6 +197,7 @@ body {
     background-size: 100%;
     background-position: center;
     mix-blend-mode:lighten;
+    position: relative;
 }
 
 #aquaregiaTitle {
@@ -213,10 +214,11 @@ body {
     color: white;
     mix-blend-mode: difference;
 }
+
 .book-slot-btn-container{
     position: absolute;
     bottom: 0;
-    height: 250px;
+    height: 200px;
     width: 100%;
     display: flex;
     align-items: center;
